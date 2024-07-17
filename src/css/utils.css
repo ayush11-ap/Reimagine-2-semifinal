@@ -1,0 +1,13 @@
+.circle {
+    background: radial-gradient(
+      circle,
+      rgba(63, 94, 251, 1) 0%,
+      rgba(221, 75, 105, 1) 100%
+    );
+    opacity: 0;
+    transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.05s;
+    filter: blur(24px);
+
+
+  }
+
