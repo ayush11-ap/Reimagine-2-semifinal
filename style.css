@@ -2,26 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html , body{
-    height: 100%;
-    width: 100%;
+@layer components {
+  .menu-links-a {
+    @apply font-[Raleway] relative text-6xl sm:text-7xl opacity-[0.4] sm:leading-[96px] font-semibold capitalize translate-y-[100%] inline-block leading-[72px] tracking-wider;
+  }
+
+  .nav-img {
+    @apply rounded-xl -rotate-90 h-[50vh] w-[26vw] absolute bottom-0 right-0 origin-bottom-right;
+  }
+
+  .home-img-cont {
+    @apply scale-0 overflow-hidden z-[999] absolute;
+  }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html, body {
+  height: 100%;
+  width: 100%;
+}
 
 @font-face {
-    font-family: 'Catavalo';
-    src: url('/font/catavalo/TTF/Catavalo-Medium.ttf') format('truetype');
-  }
+  font-family: 'Catavalo';
+  src: url('/font/catavalo/TTF/Catavalo-Medium.ttf') format('truetype');
+}
 
-  @font-face {
-    font-family: 'DS';
-    src: url('/font/DancingScript-Regular.otf') format('opentype');
-  }
-
-
+@font-face {
+  font-family: 'DS';
+  src: url('/font/DancingScript-Regular.otf') format('opentype');
+}

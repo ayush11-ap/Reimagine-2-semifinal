@@ -1,0 +1,46 @@
+//  this is section you can check for you page transition , how your page come in 
+
+
+
+ export function pageCreation() {
+    
+
+let tl = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".magic",
+        markers: { startColor: "white", endColor: "white" },
+        start: "top top",
+        end: "+=5000" ,
+        scroller: ".main",
+        scrub: true,
+        pin:true ,
+      }
+    
+});
+
+tl
+    .from(".page3", {
+        yPercent: 100,
+        scale: 0,
+})  // here you can add mor options how you incoming page should be 
+
+.from(".page4", {
+    yPercent:100
+})
+
+
+.from(".page5", {
+    yPercent:-100
+})
+
+
+.from(".page6", {
+    xPercent:-100
+})
+
+
+
+
+
+
+}
