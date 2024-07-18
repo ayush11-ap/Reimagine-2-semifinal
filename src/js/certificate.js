@@ -94,7 +94,7 @@ certi_boxes.forEach((certi_box, idx) => {
         
         certi_img_holder_img.src = data[idx].src;
         gsap.to(certi_img_holder, {
-            top: top + "px",
+            top: top ,
             ease: "power4",
             duration: 1,
         });
@@ -122,7 +122,7 @@ certi_boxes.forEach((certi_box, idx) => {
 
 
         gsap.to(certi_img_holder, {
-            x: lerp(-10, 10, xmrange),
+            x: lerp(-12, 12, xmrange),
             y: lerp(-10, 10, ymrange),
             ease: "power4",
             duration: 1,

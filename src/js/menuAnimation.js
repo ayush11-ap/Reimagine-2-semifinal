@@ -1,19 +1,14 @@
+
 let allImg = document.querySelectorAll(".nav-img");
 const allElem = document.querySelectorAll(".link");
-const allAnchor = document.querySelectorAll(".link a");
 
 function menuAnim() {
   allElem.forEach((elem, idx) => {
     let img = allImg[idx];
-    let anchor = allAnchor[idx];
 
     elem.addEventListener("mouseenter", () => {
       img.classList.add("z-[10]");
-      gsap.to(anchor, {
-        opacity: 0.9,
-        duration: 0.9,
-        ease: "back",
-      });
+     
       gsap.to(img, {
         rotate: 0,
         duration: 0.9,
@@ -23,17 +18,20 @@ function menuAnim() {
 
     elem.addEventListener("mouseleave", () => {
       img.classList.remove("z-[10]");
-      gsap.to(anchor, {
-        opacity: 0.7,
-        duration: 0.9,
-        ease: "expo.inOut",
-      });
+      
       gsap.to(img, {
         rotate: -90,
         duration: 0.9,
         ease: "expo.inOut",
       });
     });
+
+
+
+
+
+
+    
   });
 }
 

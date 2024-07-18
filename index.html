@@ -6,20 +6,20 @@
     <title>Document</title>
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
-    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-    
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> <!-- Recommended -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
   </head>
   
   <body>
     <div class="whole-webstie">
-      <div class="circle opacity-0 pointer-events-none z-[99] absolute rounded-full -translate-x-1/2 -translate-y-1/2 h-20 w-20"></div>
+
+      <div class="circle opacity-0   bg-red-600 pointer-events-none z-[99] absolute rounded-full -translate-x-1/2 -translate-y-1/2 h-8 w-8"></div>
 
 
-      <div class="loder overflow-hidden z-[9999] pointer-events-none absolute top-0 left-0 flex justify-center h-screen items-center">
+      <div class="loder  opacity-0 overflow-hidden z-[9999] pointer-events-none absolute top-0 left-0 flex justify-center h-screen items-center">
         <div class="z-[10] loder-wrapper bg-white w-screen flex justify-center items-center relative h-screen overflow-hidden">
           <div class="z-[12] left-side absolute h-full top-0 left-0 w-[0%] bg-slate-900 rounded-tr-[100px] rounded-br-[100px]"></div>
       
@@ -46,34 +46,40 @@
       <div class="main-menu overflow-hidden absolute top-0 w-screen h-screen">
         <div class="z-[9990] bg-transparent overflow-hidden inner relative w-screen h-0">
           <div class="menuContent bg-green-900 text-gray-200 h-0 p-8 sm:p-16">
-            <div class="icons flex w-full justify-between">
-              <i class="menu-complete text-4xl ri-close-large-fill"></i>
-              <i class="ri-shopping-cart-line text-4xl"></i>
+
+            <div class="icons  flex w-full justify-between">
+              <i class="  w-12 h-12 flex justify-center items-center  magnet-effect rounded-full bg-white text-black menu-complete text-2xl sm:text-3xl sm:h-16 sm:w-16 ri-close-large-fill"></i>
+              <i class="  w-12 h-12 flex justify-center items-center  magnet-effect rounded-full bg-white text-black ri-shopping-cart-line relative text-2xl sm:text-3xl sm:h-16 sm:w-16">
+                <i class=" h-6 w-6 bg-red-400  flex justify-center items-center absolute top-[-8%] right-[-16%] sm:top-[-3%] sm:right-[-4%] rounded-full text-xl">2</i>
+              </i>
             </div>
       
-            <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center">
+            <div class="flex flex-col relative items-center lg:flex-row lg:justify-between lg:items-center">
               <div class="links mt-8 sm:mt-16">
-                <div data-position="0" class="link overflow-hidden w-fit">
-                  <a class="menu-links-a" href="#">Shop All</a>
+                <div  class="link overflow-hidden w-fit">
+                  <a data-content="ShopAll" class="menu-links-a" href="#">ShopAll</a>
                 </div>
-                <div data-position="-80" class="link overflow-hidden w-fit">
-                  <a class="menu-links-a" href="#">Vintage</a>
+                <div  class="link overflow-hidden w-fit">
+                  <a data-content="Vintage" class="menu-links-a" href="#">Vintage</a>
                 </div>
-                <div data-position="-165" class="link overflow-hidden w-fit">
-                  <a class="menu-links-a" href="#">Gift Cards</a>
+                <div  class="link overflow-hidden w-fit">
+                  <a  data-content="GiftCards" class="menu-links-a" href="#">GiftCards</a>
                 </div>
-                <div data-position="-269" class="link overflow-hidden w-fit">
-                  <a class="menu-links-a" href="#">Recycles</a>
+                <div  class="link overflow-hidden w-fit">
+                  <a data-content="Recycles" class="menu-links-a" href="#">Recycles</a>
                 </div>
-                <div data-position="-391" class="link overflow-hidden w-fit">
-                  <a class="menu-links-a" href="#">Saie La Vie</a>
+                <div  class="link overflow-hidden w-fit">
+                  <a data-content="SaieLaVie" class="menu-links-a" href="#">SaieLaVie</a>
                 </div>
-                <div data-position="-499" class="link overflow-hidden w-fit">
-                  <a class="menu-links-a" href="#">Premium</a>
+                <div  class="link overflow-hidden w-fit">
+                  <a data-content="Premium" class="menu-links-a" href="#">Premium</a>
                 </div>
               </div>
       
-              <div class="mt-8 social">
+
+
+
+              <div class="mt-8  social">
                 <p class="text-center text-3xl">Follow Us</p>
                 <div class="icons flex mt-4 justify-center text-4xl gap-8">
                   <i class="ri-instagram-line"></i>
@@ -82,8 +88,15 @@
                   <i class="ri-twitter-line"></i>
                 </div>
               </div>
+
+
+              <p class="text-center text-sm hidden sm:flex absolute bottom-0 left-1/2 capitalize -translate-x-1/2 ">© 2024 SAIE <br>
+                Saie beauty, 127 West 30th Street, 9th Floor, New York, NY 10001</p>
+
+
+              <p class="text-center text-md mt-12 sm:hidden">© 2024 SAIE <br>
+                Saie beauty, 127 West 30th Street, 9th Floor, New York, NY 10001</p>
       
-              <p class="text-center text-md mt-12 sm:hidden">© 2024 SAIE</p>
       
               <div class="images py-12 hidden sm:flex h-[52vh] relative gap-10 overflow-hidden w-[28vw]">
                 <img  class="nav-img " src="assets/nav/nav-1.jpg" alt="">
@@ -117,7 +130,7 @@
             </div>
           </div>
         
-          <div class="home-content scale-[4] opacity-0 pointer-events-none z-[999] mx-4 w-full sm:text-center 2xl:w-1/2">
+          <div class="home-content  scale-[4] opacity-0 pointer-events-none z-[999] mx-4 w-full sm:text-center 2xl:w-1/2">
             <h1 class="font-[DS] text-amber-50 text-7xl leading-[7vh] tracking-wider sm:text-7xl sm:tracking-normal lg:text-8xl">
               Happy Saie Summer
             </h1>
@@ -128,7 +141,7 @@
           </div>
         
           <div class="top">
-            <div data-tilt class="home-img-cont top-[8%] -left-4 h-[60px] w-[105px] min-h-[72px] min-w-[105px] sm:w-[150px] lg:w-[200px] sm:h-[20vw] sm:max-w-[200px] sm:max-h-[100px] sm:left-20">
+            <div data-tilt class="home-img-cont  top-[8%] -left-4 h-[60px] w-[105px] min-h-[72px] min-w-[105px] sm:w-[150px] lg:w-[200px] sm:h-[20vw] sm:max-w-[200px] sm:max-h-[100px] sm:left-20">
               <img class="h-full w-full object-cover" src="/assets/home-images/home-1.jpg" alt="">
             </div>
         
@@ -237,6 +250,7 @@
       <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js" integrity="sha512-u1L7Dp3BKUP3gijgSRoMTNxmDl/5o+XOHupwwa7jsI1rMzHrllSLKsGOfqjYl8vrEG+8ghnRPNA/SCltmJCZpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
       <script type="module" src="/src/js/main.js"></script>
     </div>
     

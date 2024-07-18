@@ -5,9 +5,11 @@
       rgba(221, 75, 105, 1) 100%
     );
     opacity: 0;
-    transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.05s;
-    filter: blur(24px);
+    transition: all cubic-bezier(.24,-0.73,.89,.24) 0.02s ;
+    filter: blur(20px);
 
 
   }
+
+
 

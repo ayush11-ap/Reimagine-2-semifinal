@@ -4,7 +4,7 @@
 
 @layer components {
   .menu-links-a {
-    @apply font-[Raleway] relative text-6xl sm:text-7xl opacity-[0.4] sm:leading-[96px] font-semibold capitalize translate-y-[100%] inline-block leading-[72px] tracking-wider;
+    @apply font-[Raleway] relative text-6xl sm:text-7xl text-red-600  sm:leading-[96px] font-semibold capitalize translate-y-[100%] inline-block leading-[72px] tracking-wider border-none;
   }
 
   .nav-img {
