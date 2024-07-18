@@ -9,7 +9,7 @@ import { pageCreation } from './pageCreationjs';  //  this is section you can ch
 import { loderAnim } from "./loder";
 import { homeAnim } from "./home";
 import { menuAnimation } from "./menuAnimation";
-
+import { certificateAnim } from './certificate';
 
 
 
@@ -17,9 +17,11 @@ import { menuAnimation } from "./menuAnimation";
 
 locomotiveJs();
 pageCreation();
+certificateAnim();
 
 loderAnim(homeAnim);
 menuAnimation();
+
 
 
 

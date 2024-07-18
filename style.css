@@ -14,6 +14,36 @@
   .home-img-cont {
     @apply scale-0 overflow-hidden z-[999] absolute;
   }
+
+
+
+
+
+/*   certificate section  */
+  .certi_box {
+    @apply  border-b-[1px] border-gray-500/60 px-4   justify-between lg:py-8   mt-2 text-white font-['HelveticaNeueL'] w-full h-[19vh]  flex flex-row gap-1 lg:flex-row lg:h-[19vh] lg:gap-2 lg:justify-between lg:px-8  lg:relative ;
+  }
+
+  .left-certi{
+    @apply tracking-wider h-[100%] w-[40%]    p-2  flex gap-3 items-center justify-between overflow-hidden lg:flex lg:flex-row lg:w-[28%] lg:h-full;
+  }
+
+  .heading-left-certi{
+    @apply text-3xl   sm:text-2xl font-bold leading-none lg:text-5xl lg:tracking-wider ;
+  }
+
+  .right-certi{
+    @apply  px-2 py-2 lg:p-0 sm:flex hidden items-center justify-start lg:w-[28%] ;
+  }
+
+  .heading-right-certi{
+    @apply font-['ralewayR'] capitalize tracking-wider text-2xl font-thin hidden lg:block lg:text-xl  lg:leading-6 lg:tracking-normal 
+  }
+  
+
+
+  
+
 }
 
 * {
@@ -27,6 +57,8 @@ html, body {
   width: 100%;
 }
 
+
+
 @font-face {
   font-family: 'Catavalo';
   src: url('/font/catavalo/TTF/Catavalo-Medium.ttf') format('truetype');
@@ -35,4 +67,41 @@ html, body {
 @font-face {
   font-family: 'DS';
   src: url('/font/DancingScript-Regular.otf') format('opentype');
+}
+
+
+@font-face {
+  font-family: 'Allura-script';
+  src: url('/fonts/Allura-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Dancing-script';
+  src: url('/fonts/DancingScript-Regular.otf') format('opentype');
+  
+}
+
+@font-face {
+  font-family: 'ralewayL';
+  src: url('/fonts/Raleway-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ralewayR';
+  src: url('/fonts/Raleway-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ralewayB';
+  src: url('/fonts/Raleway-bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HelveticaNeueL';
+  src: url('/fonts/HelveticaNeueLight.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'MontserratSB';
+  src: url('/fonts/Montserrat-SemiBold.ttf') format('truetype');
 }
