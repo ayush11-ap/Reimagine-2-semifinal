@@ -16,10 +16,12 @@
   <body>
     <div class="whole-webstie">
 
-      <div class="circle opacity-0   bg-red-600 pointer-events-none z-[99] absolute rounded-full -translate-x-1/2 -translate-y-1/2 h-8 w-8"></div>
+      <div class="circle    pointer-events-none z-[99] absolute rounded-full -translate-x-1/2 -translate-y-1/2 h-8 w-8  bg-red-600"></div>
+
+      <div class="circle-video  pointer-events-none font-[Raleway] z-[99] absolute rounded-full -translate-x-1/2 -translate-y-1/2 h-28 w-28  opacity-0  scale-0  bg-gray-600/80 flex justify-center items-center text-xl">Play reel</div>
 
 
-      <div class="loder  opacity-0 overflow-hidden z-[9999] pointer-events-none absolute top-0 left-0 flex justify-center h-screen items-center">
+      <div class="loder opacity-0   overflow-hidden z-[9999] pointer-events-none absolute top-0 left-0 flex justify-center h-screen items-center">
         <div class="z-[10] loder-wrapper bg-white w-screen flex justify-center items-center relative h-screen overflow-hidden">
           <div class="z-[12] left-side absolute h-full top-0 left-0 w-[0%] bg-slate-900 rounded-tr-[100px] rounded-br-[100px]"></div>
       
@@ -199,7 +201,22 @@
         
 
         <div class="magic w-screen overflow-hidden relative">
-          <div class="page2 w-screen h-screen bg-pink-500"></div>
+
+          <div class="video-section relative w-screen h-screen bg-black">
+ <video class=" left-1/2 -translate-x-1/2 w-[80%]   h-screen absolute top-0  object-cover" src="https://res.cloudinary.com/ddevpn5ix/video/upload/v1721362945/Reiagine-2-project/vawlugwrxsbxry0dbed4.mp4"  muted loop autoplay></video>
+
+<div class="main_video bg-red-900 w-full h-0 z-[500] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  ">
+  <div class="relative w-full h-full ">
+    <video id="video" class="w-full h-full   object-cover" src="https://res.cloudinary.com/ddevpn5ix/video/upload/v1721362945/Reiagine-2-project/vawlugwrxsbxry0dbed4.mp4"  muted  controls loop autoplay></video>
+    <i class="  w-0 opacity-0  h-0 flex absolute top-20 right-20 justify-center items-center  z-[400]  rounded-full bg-white text-black video-complete text-2xl sm:text-3xl  ri-close-large-fill"></i>
+    
+  </div>
+</div>
+
+
+
+          </div>
+          
           <div
             class="page3 top-0 left-0 absolute bg-red-900 w-screen h-screen"
           ></div>
@@ -235,6 +252,10 @@
 
 
       </main>
+
+
+
+
     </div>
 
 

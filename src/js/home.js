@@ -22,7 +22,7 @@ export function homeAnim() {
         scale: 1.2,
       });
       
-      // mouseFollower();
+      mouseFollower();
 
     },
 
@@ -46,7 +46,7 @@ export function homeAnim() {
 },
     scrollTrigger: {
       trigger: ".home",
-      markers: { startColor: "white", endColor: "white" },
+      // markers: { startColor: "white", endColor: "white" },
       start: "8% top",
       end: "130% 15%",
       scroller: ".main",

@@ -9,7 +9,7 @@
 let tl = gsap.timeline({
     scrollTrigger: {
         trigger: ".magic",
-        markers: { startColor: "white", endColor: "white" },
+        // markers: { startColor: "white", endColor: "white" },
         start: "top top",
         end: function () {
             if (window.innerWidth <= 640) {
@@ -26,6 +26,7 @@ let tl = gsap.timeline({
     
 });
 
+     
 tl
     .from(".page3", {
         yPercent: 100,
@@ -43,7 +44,7 @@ tl
 
 
 .from(".page6", {
-    xPercent:-100
+    xPercent:100
 })
 
 
