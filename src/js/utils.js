@@ -21,6 +21,11 @@ export function mouseFollower() {
         else{ return 0 }
         
       },
+      scale: function (idx) {
+        if (idx == 0) { return 1 }
+        else{ return 0 }
+        
+      },
     })
   })
 
@@ -33,7 +38,11 @@ export function mouseFollower() {
         else{ return 1 }
         
       },
-
+      scale:function (idx) {
+        if (idx == 0) { return 0 }
+        else{ return 1 }
+        
+      },
     })
   })
 
