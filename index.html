@@ -5,83 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> <!-- Recommended -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <!-- Recommended -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
-  
+
   <body>
     <div class="whole-webstie">
+      <div
+        class="circle pointer-events-none z-[99] absolute rounded-full -translate-x-1/2 -translate-y-1/2 h-8 w-8 bg-red-600"
+      ></div>
 
-      <div class="circle    pointer-events-none z-[99] absolute rounded-full -translate-x-1/2 -translate-y-1/2 h-8 w-8  bg-red-600"></div>
+      <div
+        class="circle-video pointer-events-none font-[Raleway] z-[99] absolute rounded-full -translate-x-1/2 -translate-y-1/2 h-28 w-28 opacity-0 scale-0 bg-gray-600/80 flex justify-center items-center text-xl"
+      >
+        Play reel
+      </div>
 
-      <div class="circle-video  pointer-events-none font-[Raleway] z-[99] absolute rounded-full -translate-x-1/2 -translate-y-1/2 h-28 w-28  opacity-0  scale-0  bg-gray-600/80 flex justify-center items-center text-xl">Play reel</div>
+      <div
+        class="loder opacity-0 overflow-hidden z-[9999] pointer-events-none absolute top-0 left-0 flex justify-center h-screen items-center"
+      >
+        <div
+          class="z-[10] loder-wrapper bg-white w-screen flex justify-center items-center relative h-screen overflow-hidden"
+        >
+          <div
+            class="z-[12] left-side absolute h-full top-0 left-0 w-[0%] bg-slate-900 rounded-tr-[100px] rounded-br-[100px]"
+          ></div>
 
+          <div
+            class="z-[12] right-side absolute h-full top-0 right-0 w-[0%] bg-slate-900 rounded-tl-[100px] rounded-bl-[100px]"
+          ></div>
 
-      <div class="loder opacity-0   overflow-hidden z-[9999] pointer-events-none absolute top-0 left-0 flex justify-center h-screen items-center">
-        <div class="z-[10] loder-wrapper bg-white w-screen flex justify-center items-center relative h-screen overflow-hidden">
-          <div class="z-[12] left-side absolute h-full top-0 left-0 w-[0%] bg-slate-900 rounded-tr-[100px] rounded-br-[100px]"></div>
-      
-          <div class="z-[12] right-side absolute h-full top-0 right-0 w-[0%] bg-slate-900 rounded-tl-[100px] rounded-bl-[100px]"></div>
-      
-          <h1 class="initial-name text-center text-8xl text-black font-[montserrat] font-semibold">
-            <span class="text-left tracking-widest inline-block">Sa</span><span class="text-right tracking-widest inline-block">ie</span>
+          <h1
+            class="initial-name text-center text-8xl text-black font-[montserrat] font-semibold"
+          >
+            <span class="text-left tracking-widest inline-block">Sa</span
+            ><span class="text-right tracking-widest inline-block">ie</span>
           </h1>
-      
-          <h1 class="z-[14] text-white final-name absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-[Catavalo] tracking-[8px] opacity-0 text-8xl">
+
+          <h1
+            class="z-[14] text-white final-name absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-[Catavalo] tracking-[8px] opacity-0 text-8xl"
+          >
             Saie
           </h1>
-      
-          <div class="progess-container items-center absolute bottom-20 w-full flex justify-between px-8 sm:px-16 gap-8 left-1/2 -translate-x-1/2">
-            <div class="border-slate-600 overflow-hidden border-2 h-3 rounded-lg w-[90%]">
+
+          <div
+            class="progess-container items-center absolute bottom-20 w-full flex justify-between px-8 sm:px-16 gap-8 left-1/2 -translate-x-1/2"
+          >
+            <div
+              class="border-slate-600 overflow-hidden border-2 h-3 rounded-lg w-[90%]"
+            >
               <h1 class="h-full progress-bar w-0 bg-slate-700"></h1>
             </div>
-            <p class="counter w-[50px] font-[Raleway] font-medium text-2xl text-black">00</p>
+            <p
+              class="counter w-[50px] font-[Raleway] font-medium text-2xl text-black"
+            >
+              00
+            </p>
           </div>
         </div>
       </div>
-      
 
       <div class="main-menu overflow-hidden absolute top-0 w-screen h-screen">
-        <div class="z-[9990] bg-transparent overflow-hidden inner relative w-screen h-0">
+        <div
+          class="z-[9990] bg-transparent overflow-hidden inner relative w-screen h-0"
+        >
           <div class="menuContent bg-green-900 text-gray-200 h-0 p-8 sm:p-16">
-
-            <div class="icons  flex w-full justify-between">
-              <i class="  w-12 h-12 flex justify-center items-center  magnet-effect rounded-full bg-white text-black menu-complete text-2xl sm:text-3xl sm:h-16 sm:w-16 ri-close-large-fill"></i>
-              <i class="  w-12 h-12 flex justify-center items-center  magnet-effect rounded-full bg-white text-black ri-shopping-cart-line relative text-2xl sm:text-3xl sm:h-16 sm:w-16">
-                <i class=" h-6 w-6 bg-red-400  flex justify-center items-center absolute top-[-8%] right-[-16%] sm:top-[-3%] sm:right-[-4%] rounded-full text-xl">2</i>
+            <div class="icons flex w-full justify-between">
+              <i
+                class="w-12 h-12 flex justify-center items-center magnet-effect rounded-full bg-white text-black menu-complete text-2xl sm:text-3xl sm:h-16 sm:w-16 ri-close-large-fill"
+              ></i>
+              <i
+                class="w-12 h-12 flex justify-center items-center magnet-effect rounded-full bg-white text-black ri-shopping-cart-line relative text-2xl sm:text-3xl sm:h-16 sm:w-16"
+              >
+                <i
+                  class="h-6 w-6 bg-red-400 flex justify-center items-center absolute top-[-8%] right-[-16%] sm:top-[-3%] sm:right-[-4%] rounded-full text-xl"
+                  >2</i
+                >
               </i>
             </div>
-      
-            <div class="flex flex-col relative items-center lg:flex-row lg:justify-between lg:items-center">
+
+            <div
+              class="flex flex-col relative items-center lg:flex-row lg:justify-between lg:items-center"
+            >
               <div class="links mt-8 sm:mt-16">
-                <div  class="link overflow-hidden w-fit">
-                  <a data-content="ShopAll" class="menu-links-a" href="#">ShopAll</a>
+                <div class="link overflow-hidden w-fit">
+                  <a data-content="ShopAll" class="menu-links-a" href="#"
+                    >ShopAll</a
+                  >
                 </div>
-                <div  class="link overflow-hidden w-fit">
-                  <a data-content="Vintage" class="menu-links-a" href="#">Vintage</a>
+                <div class="link overflow-hidden w-fit">
+                  <a data-content="Vintage" class="menu-links-a" href="#"
+                    >Vintage</a
+                  >
                 </div>
-                <div  class="link overflow-hidden w-fit">
-                  <a  data-content="GiftCards" class="menu-links-a" href="#">GiftCards</a>
+                <div class="link overflow-hidden w-fit">
+                  <a data-content="GiftCards" class="menu-links-a" href="#"
+                    >GiftCards</a
+                  >
                 </div>
-                <div  class="link overflow-hidden w-fit">
-                  <a data-content="Recycles" class="menu-links-a" href="#">Recycles</a>
+                <div class="link overflow-hidden w-fit">
+                  <a data-content="Recycles" class="menu-links-a" href="#"
+                    >Recycles</a
+                  >
                 </div>
-                <div  class="link overflow-hidden w-fit">
-                  <a data-content="SaieLaVie" class="menu-links-a" href="#">SaieLaVie</a>
+                <div class="link overflow-hidden w-fit">
+                  <a data-content="SaieLaVie" class="menu-links-a" href="#"
+                    >SaieLaVie</a
+                  >
                 </div>
-                <div  class="link overflow-hidden w-fit">
-                  <a data-content="Premium" class="menu-links-a" href="#">Premium</a>
+                <div class="link overflow-hidden w-fit">
+                  <a data-content="Premium" class="menu-links-a" href="#"
+                    >Premium</a
+                  >
                 </div>
               </div>
-      
 
-
-
-              <div class="mt-8  social">
+              <div class="mt-8 social">
                 <p class="text-center text-3xl">Follow Us</p>
                 <div class="icons flex mt-4 justify-center text-4xl gap-8">
                   <i class="ri-instagram-line"></i>
@@ -91,39 +144,53 @@
                 </div>
               </div>
 
+              <p
+                class="text-center text-sm hidden sm:flex absolute bottom-0 left-1/2 capitalize -translate-x-1/2"
+              >
+                © 2024 SAIE <br />
+                Saie beauty, 127 West 30th Street, 9th Floor, New York, NY 10001
+              </p>
 
-              <p class="text-center text-sm hidden sm:flex absolute bottom-0 left-1/2 capitalize -translate-x-1/2 ">© 2024 SAIE <br>
-                Saie beauty, 127 West 30th Street, 9th Floor, New York, NY 10001</p>
+              <p class="text-center text-md mt-12 sm:hidden">
+                © 2024 SAIE <br />
+                Saie beauty, 127 West 30th Street, 9th Floor, New York, NY 10001
+              </p>
 
-
-              <p class="text-center text-md mt-12 sm:hidden">© 2024 SAIE <br>
-                Saie beauty, 127 West 30th Street, 9th Floor, New York, NY 10001</p>
-      
-      
-              <div class="images py-12 hidden sm:flex h-[52vh] relative gap-10 overflow-hidden w-[28vw]">
-                <img  class="nav-img " src="assets/nav/nav-1.jpg" alt="">
-                <img  class="nav-img " src="assets/nav/nav-2.jpg" alt="">
-                <img  class="nav-img " src="assets/nav/nav-3.png" alt="">
-                <img  class="nav-img " src="assets/nav/nav-4.png" alt="">
-                <img  class="nav-img " src="assets/nav/nav-5.jpg" alt="">
-                <img  class="nav-img " src="assets/nav/nav-6.png" alt="">
+              <div
+                class="images py-12 hidden sm:flex h-[52vh] relative gap-10 overflow-hidden w-[28vw]"
+              >
+                <img class="nav-img" src="assets/nav/nav-1.jpg" alt="" />
+                <img class="nav-img" src="assets/nav/nav-2.jpg" alt="" />
+                <img class="nav-img" src="assets/nav/nav-3.png" alt="" />
+                <img class="nav-img" src="assets/nav/nav-4.png" alt="" />
+                <img class="nav-img" src="assets/nav/nav-5.jpg" alt="" />
+                <img class="nav-img" src="assets/nav/nav-6.png" alt="" />
               </div>
             </div>
           </div>
-      
+
           <div class="svgwala w-full absolute bottom-0 flex flex-col">
-            <img class="w-full h-16 sm:h-36 svg-cont" src="/assets/nav/top-part.svg" alt="">
-            <img class="w-full h-16 sm:h-28 my-[-4px]" src="/assets/nav/bottom-part.svg" alt="">
+            <img
+              class="w-full h-16 sm:h-36 svg-cont"
+              src="/assets/nav/top-part.svg"
+              alt=""
+            />
+            <img
+              class="w-full h-16 sm:h-28 my-[-4px]"
+              src="/assets/nav/bottom-part.svg"
+              alt=""
+            />
           </div>
         </div>
       </div>
-      
-
 
       <main class="main w-screen bg-slate-800">
-
-        <div class="home overflow-hidden relative p-4 w-screen h-screen bg-slate-900 flex justify-center items-center">
-          <div class="nav-icons z-[200] absolute font-light text-3xl sm:text-2xl top-4 text-white flex items-center justify-between px-4 w-full sm:justify-center sm:gap-[172px]">
+        <div
+          class="home overflow-hidden relative p-4 w-screen h-screen bg-slate-900 flex justify-center items-center"
+        >
+          <div
+            class="nav-icons z-[200] absolute font-light text-3xl sm:text-2xl top-4 text-white flex items-center justify-between px-4 w-full sm:justify-center sm:gap-[172px]"
+          >
             <div class="one flex gap-8">
               <i class="ri-search-2-line"></i>
             </div>
@@ -131,134 +198,538 @@
               <i class="menu ri-menu-4-line"></i>
             </div>
           </div>
-        
-          <div class="home-content  scale-[4] opacity-0 pointer-events-none z-[999] mx-4 w-full sm:text-center 2xl:w-1/2">
-            <h1 class="font-[DS] text-amber-50 text-7xl leading-[7vh] tracking-wider sm:text-7xl sm:tracking-normal lg:text-8xl">
+
+          <div
+            class="home-content scale-[4] opacity-0 pointer-events-none z-[999] mx-4 w-full sm:text-center 2xl:w-1/2"
+          >
+            <h1
+              class="font-[DS] text-amber-50 text-7xl leading-[7vh] tracking-wider sm:text-7xl sm:tracking-normal lg:text-8xl"
+            >
               Happy Saie Summer
             </h1>
-        
-            <p class="text-amber-50 mt-4 font-[Raleway] text-md tracking-wide opacity-75 sm:mx-auto sm:w-2/3">
-              It's officially the best time of year. We've got all the effortless essentials you need from mineral SPF to nourishing bronzers.
+
+            <p
+              class="text-amber-50 mt-4 font-[Raleway] text-md tracking-wide opacity-75 sm:mx-auto sm:w-2/3"
+            >
+              It's officially the best time of year. We've got all the
+              effortless essentials you need from mineral SPF to nourishing
+              bronzers.
             </p>
           </div>
-        
+
           <div class="top">
-            <div data-tilt class="home-img-cont  top-[8%] -left-4 h-[60px] w-[105px] min-h-[72px] min-w-[105px] sm:w-[150px] lg:w-[200px] sm:h-[20vw] sm:max-w-[200px] sm:max-h-[100px] sm:left-20">
-              <img class="h-full w-full object-cover" src="/assets/home-images/home-1.jpg" alt="">
+            <div
+              data-tilt
+              class="home-img-cont top-[8%] -left-4 h-[60px] w-[105px] min-h-[72px] min-w-[105px] sm:w-[150px] lg:w-[200px] sm:h-[20vw] sm:max-w-[200px] sm:max-h-[100px] sm:left-20"
+            >
+              <img
+                class="h-full w-full object-cover"
+                src="/assets/home-images/home-1.jpg"
+                alt=""
+              />
             </div>
-        
-            <div data-tilt class="home-img-cont top-[20%] left-12 h-[101px] w-[202px] sm:w-[240px] lg:w-[280px] sm:h-[160px] lg:h-[180px] sm:top-[24%] lg:top-[33%] lg:-left-10">
-              <img class="h-full w-full object-cover" src="/assets/home-images/home-2.jpg" alt="">
+
+            <div
+              data-tilt
+              class="home-img-cont top-[20%] left-12 h-[101px] w-[202px] sm:w-[240px] lg:w-[280px] sm:h-[160px] lg:h-[180px] sm:top-[24%] lg:top-[33%] lg:-left-10"
+            >
+              <img
+                class="h-full w-full object-cover"
+                src="/assets/home-images/home-2.jpg"
+                alt=""
+              />
             </div>
-        
-            <div data-tilt class="home-img-cont opacity-0 sm:opacity-100 sm:w-[160px] sm:h-[160px] sm:top-[16%] sm:left-1/2 lg:top-[18%]">
-              <img class="h-full w-full object-cover" src="/assets/home-images/home-3.jpg" alt="">
+
+            <div
+              data-tilt
+              class="home-img-cont opacity-0 sm:opacity-100 sm:w-[160px] sm:h-[160px] sm:top-[16%] sm:left-1/2 lg:top-[18%]"
+            >
+              <img
+                class="h-full w-full object-cover"
+                src="/assets/home-images/home-3.jpg"
+                alt=""
+              />
             </div>
-        
-            <div data-tilt class="home-img-cont opacity-0 sm:opacity-100 lg:w-[140px] lg:h-[120px] lg:top-[14%] lg:left-[30%]">
-              <img class="h-full w-full object-cover" src="/assets/home-images/home-4.jpg" alt="">
+
+            <div
+              data-tilt
+              class="home-img-cont opacity-0 sm:opacity-100 lg:w-[140px] lg:h-[120px] lg:top-[14%] lg:left-[30%]"
+            >
+              <img
+                class="h-full w-full object-cover"
+                src="/assets/home-images/home-4.jpg"
+                alt=""
+              />
             </div>
-        
-            <div data-tilt class="home-img-cont top-[30%] w-[80px] h-[50px] right-[-4%] sm:visible lg:w-[180px] lg:h-[180px] lg:top-[8%] lg:right-[20%]">
-              <img class="h-full w-full object-cover object-left-bottom" src="/assets/home-images/home-5.jpg" alt="">
+
+            <div
+              data-tilt
+              class="home-img-cont top-[30%] w-[80px] h-[50px] right-[-4%] sm:visible lg:w-[180px] lg:h-[180px] lg:top-[8%] lg:right-[20%]"
+            >
+              <img
+                class="h-full w-full object-cover object-left-bottom"
+                src="/assets/home-images/home-5.jpg"
+                alt=""
+              />
             </div>
-        
-            <div data-tilt class="home-img-cont top-[8%] -right-2 h-[67px] w-[126px] sm:w-[140px] sm:right-20 sm:top-[12%] sm:h-[80px]">
-              <img class="h-full w-full object-cover object-left-bottom" src="/assets/home-images/home-6.jpg" alt="">
+
+            <div
+              data-tilt
+              class="home-img-cont top-[8%] -right-2 h-[67px] w-[126px] sm:w-[140px] sm:right-20 sm:top-[12%] sm:h-[80px]"
+            >
+              <img
+                class="h-full w-full object-cover object-left-bottom"
+                src="/assets/home-images/home-6.jpg"
+                alt=""
+              />
             </div>
-        
-            <div data-tilt class="home-img-cont top-[28%] opacity-0 sm:opacity-100 -right-4 h-[84px] w-[126px] sm:h-[120px] lg:right-[-1%] lg:h-[240px] lg:w-[260px] lg:top-[36%]">
-              <img class="h-full w-full object-cover" src="/assets/home-images/home-7.jpg" alt="">
+
+            <div
+              data-tilt
+              class="home-img-cont top-[28%] opacity-0 sm:opacity-100 -right-4 h-[84px] w-[126px] sm:h-[120px] lg:right-[-1%] lg:h-[240px] lg:w-[260px] lg:top-[36%]"
+            >
+              <img
+                class="h-full w-full object-cover"
+                src="/assets/home-images/home-7.jpg"
+                alt=""
+              />
             </div>
           </div>
-        
+
           <div class="bottom">
-            <div data-tilt class="home-img-cont   opacity-0 sm:opacity-100  bottom-[26%] -left-20 h-[101px] w-[160px] sm:left-[18%] sm:bottom-[8%] lg:h-[220px] lg:w-[240px]">
-              <img class="h-full w-full object-cover" src="/assets/home-images/home-8.jpg" alt="">
+            <div
+              data-tilt
+              class="home-img-cont opacity-0 sm:opacity-100 bottom-[26%] -left-20 h-[101px] w-[160px] sm:left-[18%] sm:bottom-[8%] lg:h-[220px] lg:w-[240px]"
+            >
+              <img
+                class="h-full w-full object-cover"
+                src="/assets/home-images/home-8.jpg"
+                alt=""
+              />
             </div>
-        
-            <div data-tilt class="home-img-cont bottom-[6%] -left-14 h-[118px] w-[120px] sm:left-[1%] sm:bottom-[1%] sm:w-[140px] sm:h-[130px]">
-              <img class="h-full w-full object-cover object-top" src="/assets/home-images/home-9.png" alt="">
+
+            <div
+              data-tilt
+              class="home-img-cont bottom-[6%] -left-14 h-[118px] w-[120px] sm:left-[1%] sm:bottom-[1%] sm:w-[140px] sm:h-[130px]"
+            >
+              <img
+                class="h-full w-full object-cover object-top"
+                src="/assets/home-images/home-9.png"
+                alt=""
+              />
             </div>
-        
-            <div data-tilt class="home-img-cont bottom-[14%] left-[28%] sm:left-[45%] h-[172px] w-[172px]">
-              <img class="h-full w-full object-cover" src="/assets/home-images/home-10.jpg" alt="">
+
+            <div
+              data-tilt
+              class="home-img-cont bottom-[14%] left-[28%] sm:left-[45%] h-[172px] w-[172px]"
+            >
+              <img
+                class="h-full w-full object-cover"
+                src="/assets/home-images/home-10.jpg"
+                alt=""
+              />
             </div>
-        
-            <div data-tilt class="home-img-cont bottom-[-4%] left-2/3 -translate-x-1/2 h-[84px] w-[202px] sm:bottom-[-6%] sm:left-[40%] sm:translate-x-0">
-              <img class="h-full w-full object-left-bottom object-cover" src="/assets/home-images/home-11.jpg" alt="">
+
+            <div
+              data-tilt
+              class="home-img-cont bottom-[-4%] left-2/3 -translate-x-1/2 h-[84px] w-[202px] sm:bottom-[-6%] sm:left-[40%] sm:translate-x-0"
+            >
+              <img
+                class="h-full w-full object-left-bottom object-cover"
+                src="/assets/home-images/home-11.jpg"
+                alt=""
+              />
             </div>
-        
-            <div data-tilt class="home-img-cont bottom-[10%] -right-14 h-[68px] w-[126px] sm:right-[4%] sm:h-[84px] sm:bottom-[2%]">
-              <img class="h-full w-full object-cover" src="/assets/home-images/home-12.jpg" alt="">
+
+            <div
+              data-tilt
+              class="home-img-cont bottom-[10%] -right-14 h-[68px] w-[126px] sm:right-[4%] sm:h-[84px] sm:bottom-[2%]"
+            >
+              <img
+                class="h-full w-full object-cover"
+                src="/assets/home-images/home-12.jpg"
+                alt=""
+              />
             </div>
-        
-            <div data-tilt class="home-img-cont bottom-[26%] -right-4 h-[84px] w-[109px] sm:right-[15%] sm:bottom-[20%] sm:h-[96px] sm:w-[120px] lg:right-[22%] lg:bottom-[8%] lg:h-[180px] lg:w-[200px]">
-              <img class="h-full w-full object-cover object-center" src="/assets/home-images/home-13.png" alt="">
+
+            <div
+              data-tilt
+              class="home-img-cont bottom-[26%] -right-4 h-[84px] w-[109px] sm:right-[15%] sm:bottom-[20%] sm:h-[96px] sm:w-[120px] lg:right-[22%] lg:bottom-[8%] lg:h-[180px] lg:w-[200px]"
+            >
+              <img
+                class="h-full w-full object-cover object-center"
+                src="/assets/home-images/home-13.png"
+                alt=""
+              />
             </div>
           </div>
         </div>
-        
 
         <div class="magic w-screen overflow-hidden relative">
-
           <div class="video-section relative w-screen h-screen bg-black">
- <video class=" left-1/2 -translate-x-1/2 w-[80%]   h-screen absolute top-0  object-cover" src="https://res.cloudinary.com/ddevpn5ix/video/upload/v1721362945/Reiagine-2-project/vawlugwrxsbxry0dbed4.mp4"  muted loop autoplay></video>
+            <video
+              class="left-1/2 -translate-x-1/2 w-[80%] h-screen absolute top-0 object-cover"
+              src="https://res.cloudinary.com/ddevpn5ix/video/upload/v1721362945/Reiagine-2-project/vawlugwrxsbxry0dbed4.mp4"
+              muted
+              loop
+              autoplay
+            ></video>
 
-<div class="main_video bg-red-900 w-full h-0 z-[500] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  ">
-  <div class="relative w-full h-full ">
-    <video id="video" class="w-full h-full   object-cover" src="https://res.cloudinary.com/ddevpn5ix/video/upload/v1721362945/Reiagine-2-project/vawlugwrxsbxry0dbed4.mp4"  muted  controls loop autoplay></video>
-    <i class="  w-0 opacity-0  h-0 flex absolute top-20 right-20 justify-center items-center  z-[400]  rounded-full bg-white text-black video-complete text-2xl sm:text-3xl  ri-close-large-fill"></i>
-    
-  </div>
-</div>
-
-
-
+            <div
+              class="main_video bg-red-900 w-full h-0 z-[500] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            >
+              <div class="relative w-full h-full">
+                <video
+                  id="video"
+                  class="w-full h-full object-cover"
+                  src="https://res.cloudinary.com/ddevpn5ix/video/upload/v1721362945/Reiagine-2-project/vawlugwrxsbxry0dbed4.mp4"
+                  muted
+                  controls
+                  loop
+                  autoplay
+                ></video>
+                <i
+                  class="w-0 opacity-0 h-0 flex absolute top-20 right-20 justify-center items-center z-[400] rounded-full bg-white text-black video-complete text-2xl sm:text-3xl ri-close-large-fill"
+                ></i>
+              </div>
+            </div>
           </div>
-          
+
           <div
             class="page3 top-0 left-0 absolute bg-red-900 w-screen h-screen"
           ></div>
 
-
-
           <div
-            class="page4 top-0 left-0 absolute w-screen  h-[100vh] certi_main  bg-zinc-800 overflow-hidden lg:w-full lg:h-screen"
+            class="page4 top-0 left-0 absolute w-screen h-[100vh] certi_main bg-zinc-800 overflow-hidden lg:w-full lg:h-screen"
           >
-        
-         
-          <div class="relative sm:opacity-0 certi-img-holder  pointer-events-none z-[99999] flex justify-center items-center lg:absolute lg:w-[360px] lg:h-[164px] lg:left-1/2 lg:-translate-x-1/2">
-              <img class="rounded-md lg:w-[100%] lg:h-[116%] lg:top-1/2 lg:mix-blend-difference" src="" alt="">
-          </div>
-  
-          <div class="certificates ">
-            
-          </div>
-        
-        
-        
-        </div>
+            <div
+              class="relative sm:opacity-0 certi-img-holder pointer-events-none z-[99999] flex justify-center items-center lg:absolute lg:w-[360px] lg:h-[164px] lg:left-1/2 lg:-translate-x-1/2"
+            >
+              <img
+                class="rounded-md lg:w-[100%] lg:h-[116%] lg:top-1/2 lg:mix-blend-difference"
+                src=""
+                alt=""
+              />
+            </div>
 
+            <div class="certificates"></div>
+          </div>
 
           <div
             class="page5 top-0 left-0 absolute w-screen bg-blue-400 h-screen"
           ></div>
+
+
+
+
+
           <div
-            class="page6 top-0 left-0 absolute w-screen bg-green-400 h-screen"
-          ></div>
+            class="page6 top-0 left-0 absolute w-screen bg-green-400 h-full"
+          >
+            <div class="w-screen h-[37%] sm:h-[50%] bg-black retative">
+              <div
+                class="inner sm:w-[98%] w-[95%] h-[35%] sm:h-[47%] absolute  flex top-3 bg-black left-3 border-2 justify-between items-center"
+              >
+                <div class="form py-6 mx-4">
+                  <div class="relative z-0 w-full mb-5 group">
+                    <input
+                      type="email"
+                      name="floating_email"
+                      id="floating_email"
+                      class="block py-2.5 px-0 w-80 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-slate-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                      placeholder=" "
+                      required
+                    />
+
+                    <label
+                      for="floating_email"
+                      class="peer-focus:font-medium w-80 absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                      >Email address</label
+                    >
+                  </div>
+
+                  <div class="grid md:grid-cols-2 md:gap-6">
+                    <div class="relative z-0 w-full mb-5 group">
+                      <input
+                        type="text"
+                        name="floating_first_name"
+                        id="floating_first_name"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        placeholder=" "
+                        required
+                      />
+                      <label
+                        for="floating_first_name"
+                        class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        >First name</label
+                      >
+                    </div>
+                    <div class="relative z-0 w-full mb-5 group">
+                      <input
+                        type="text"
+                        name="floating_last_name"
+                        id="floating_last_name"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        placeholder=" "
+                        required
+                      />
+                      <label
+                        for="floating_last_name"
+                        class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        >Last name</label
+                      >
+                    </div>
+                  </div>
+
+                  <div class="relative z-0 w-full mb-5 group">
+                    <input
+                      type="tel"
+                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                      name="floating_phone"
+                      id="floating_phone"
+                      class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                      placeholder=" "
+                      required
+                    />
+                    <label
+                      for="floating_phone"
+                      class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                      >Phone number (123-456-7890)</label
+                    >
+                  </div>
+                  <button
+                    type="button"
+                    class="text-white bg-gradient-to-br from-gray-400 to-black hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-800 font-medium rounded-lg text-sm px-4 py-2 text-center me-2 mb-2"
+                  >
+                    SUBSCRIBE
+                  </button>
+                </div>
+                <div
+                  class="saie w-[70%] h-[100%] sm:flex hidden justify-center items-center overflow-hidden text-white"
+                >
+                  <svg
+                    class="logo"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 521 235"
+                  >
+                    <g fill="currentColor" fill-rule="evenodd">
+                      <path
+                        d="M325.5 47c12.979 0 23.5-10.522 23.5-23.5C349 10.521 338.479 0 325.5 0 312.52 0 302 10.521 302 23.5c0 12.978 10.52 23.5 23.5 23.5M231.349 69.203c26.154-.19 27.884 21.65 26.922 31.86-1.094 11.593-4.518 25.528-28.749 42.263-24.231 16.735-40.645 20.582-62.515 33.431-20.66 12.138-21.203 24.76-20.625 30.29.543 5.22 5.544 26.273 39.663 27.854 31.36 1.454 51.266-13.294 70.35-34.277v32.607l40.661-.03-.001.003h60.173v-1.372c-11.12 0-17.424-8.349-17.424-23.685V61.72h-44.279v1.373c11.121 0 17.579 6.14 17.579 20.041v125.012c0 16.107-3.15 23.646-13.1 23.646h-1.25c-9.473 0-13.174-7.539-13.174-23.646v-100.17c0-25.952-3.82-38.49-13.846-44.53-11.476-6.913-31.462-6.41-60.729 6.1-58.996 25.216-66.68 46.035-66.68 51.585h32.738s-1.49-16.355 12.758-32.245c10.288-11.474 23.259-19.552 41.528-19.684zm25.047 126.348c-7.71 8.975-22.548 18.965-42.79 21.185-21.549 2.364-35.143-7.325-34.615-20.988.554-14.325 15.339-24.69 24.714-30.362 9.375-5.672 21.49-12.134 34.615-22.548 11.627-9.227 18.076-20.69 18.076-20.69v73.403zM516.618 121.958c0-10.404-11.94-62.958-75.083-62.958-50.991 0-82.749 40.111-83.277 89.253-.505 46.882 29.095 86.893 86.327 86.747C505.54 234.845 521 170.825 521 170.825l-1.44-.204c-.782 1.88-5.736 12.025-13.501 21.193-13.257 15.147-32.28 26.878-58.208 24.613-19.076-1.668-38.775-14.121-49.838-36.71-7.439-15.19-11.235-38.13-8.006-57.76h126.611zm-31.22-21.701c1.11 8.35-5.378 17.383-18.822 17.383l-75.858.08c4.703-30.362 26.397-54.444 53.126-54.444 26.957 0 39.249 19.658 41.553 36.98zM96.822 140.242c-38.769-17.785-71.795-29.641-71.795-49.402 0-15.808 14.663-28.574 45.375-27.603 32.724 1.035 51.87 26.818 48.533 58.28h1.436l19.17-28.992s-3.63-4.458-7.304-7.76c-10.003-9.377-31.154-24.966-61.835-25.73C26.19 57.933 4.349 83.5 2.052 102.32c-2.297 18.82 12.827 32.558 33.887 43.662 21.06 11.104 67.565 26.436 77.69 42.79 9.52 15.373.09 41.71-43.18 41.71-39.11 0-64.422-36.973-68.966-57.557H0v44.08S33.208 235 68.388 235c39.44 0 67.363-17.146 71.512-43.944 2.01-12.985-4.308-33.029-43.078-50.814"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            
+            <footer class="bg-white sm:py-[30px] dark:bg-black">
+              <div class="mx-auto w-full max-w-screen-xl">
+                <div
+                  class="grid grid-cols-2 gap-x-6 gap-y-4 px-4  lg:py-8 md:grid-cols-4"
+                >
+                  <div>
+                    <h2
+                      class="mb-6 text-3xl opacity-80 font-semibold text-gray-900 uppercase dark:text-white"
+                    >
+                      Saie
+                    </h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                        <a href="#" class="hover:underline">SHOP</a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="hover:underline">SHOP ALL</a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="hover:underline">SAIE VINTAGE</a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="hover:underline">EVERY BODY</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h2
+                      class="mb-6 text-3xl opacity-80 font-semibold text-gray-900 uppercase dark:text-white"
+                    >
+                      ABOUT
+                    </h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                        <a href="#" class="hover:underline">FOUNDING STORY</a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="hover:underline">SAIE STANDARDS</a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="hover:underline">SAIE RECYCLING</a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="hover:underline"
+                          >SAIE DEW CREW REWARDS</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h2
+                      class="mb-6 text-3xl opacity-75 font-semibold text-gray-900 uppercase dark:text-white"
+                    >
+                      HELP
+                    </h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                        <a href="#" class="hover:underline">FQA</a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="hover:underline">CONTACT</a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="hover:underline">FIND A STORE</a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="hover:underline">ACCOUNT</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h2
+                      class="mb-6 text-3xl opacity-75 font-semibold text-gray-900 uppercase dark:text-white"
+                    >
+                      PLEGDGES
+                    </h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                        <a href="#" class="hover:underline"
+                          >Climate Neutral Certified</a
+                        >
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="hover:underline"
+                          >1% for the Planet</a
+                        >
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="hover:underline"
+                          >Plastic Negative Certified</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="px-4 py-3 sm:py-6 bg-gray-100 dark:bg-black md:flex md:items-center md:justify-between"
+                >
+                  <span
+                    class="text-sm opacity-75 text-gray-500 dark:text-gray-300 sm:text-center"
+                    >SAIE BEAUTY, 127 WEST 30TH STREET, 9TH FLOOR, NEW YORK, NY
+                    10001
+                  </span>
+                  <div
+                    class="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse"
+                  >
+                    <a
+                      href="#"
+                      class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                    >
+                      <svg
+                        class="w-6 h-6"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 8 19"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <span class="sr-only">Facebook page</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                    >
+                      <svg
+                        class="w-6 h-6"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 21 16"
+                      >
+                        <path
+                          d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"
+                        />
+                      </svg>
+                      <span class="sr-only">Discord community</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                    >
+                      <svg
+                        class="w-6 h-6"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 17"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <span class="sr-only">Twitter page</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                    >
+                      <svg
+                        class="w-6 h-6"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <span class="sr-only">GitHub account</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                    >
+                      <svg
+                        class="w-6 h-6"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <span class="sr-only">Dribbble account</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </div>
         </div>
-
-
-
       </main>
-
-
-
-
     </div>
-
-
 
 
 
@@ -266,14 +737,37 @@
 
 
     <div class="scripts">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+        integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
+        integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
       <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js" integrity="sha512-u1L7Dp3BKUP3gijgSRoMTNxmDl/5o+XOHupwwa7jsI1rMzHrllSLKsGOfqjYl8vrEG+8ghnRPNA/SCltmJCZpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"
+        integrity="sha512-u1L7Dp3BKUP3gijgSRoMTNxmDl/5o+XOHupwwa7jsI1rMzHrllSLKsGOfqjYl8vrEG+8ghnRPNA/SCltmJCZpQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/sheryjs/dist/Shery.js"
+      ></script>
+      <!-- Recommended -->
       <script type="module" src="/src/js/main.js"></script>
     </div>
-    
   </body>
 </html>
