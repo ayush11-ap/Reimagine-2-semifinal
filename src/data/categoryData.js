@@ -128,7 +128,7 @@
             quantity: "12ml/1oz",
             rating: 4.2,
             rate: 28,
-            img: "HYDRABEAM"
+            img: "http://saiehello.com/cdn/shop/products/saie-hydrabeam-closed-05_1000x.png?v=1673470396"
 
         },
         {

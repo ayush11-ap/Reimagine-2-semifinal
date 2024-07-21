@@ -5,20 +5,10 @@ import { categoryData } from "../data/categoryData";
 
 export function categoryAnim() {
     
-let arr4 = [["top-8 left-8"], ["bottom-10 left-64"], ["top-10 right-40"], ["bottom-10 right-20"]];
-let arr2 = [["top-20 left-1/2 -translate-x-1/2"], ["top-1/2 -translate-y-1/2 left-10"], ["top-10 right-10"], ["bottom-12 left-[44%]"]];
-let arr3 = [["left-64 top-20"], ["bottom-4 left-32"], ["top-4 right-48"], ["bottom-24 right-[28%]"]];
-let arr1 = [["left-[30%] top-20"], ["bottom-4 left-10"], ["top-4 right-10"], ["bottom-36 right-[28%]"]];
 
 let cards = document.querySelector(".cards");
 let cateP = document.querySelectorAll('.category p');
 
-const categoryPositions = {
-  face: arr1,
-  cheek: arr2,
-  eyes: arr3,
-  lips: arr4,
-};
 
 let renderCards;
 
@@ -39,9 +29,9 @@ const reverseAnimation = () => {
           return "-100%";
         }
       },
-      duration: 0.4,
-      stagger: 0.02,
-      ease: "power4",
+      duration: 0.6,
+      stagger: 0.03,
+      ease: "expo.ease",
       onComplete: resolve,
     });
   });
@@ -51,7 +41,6 @@ if (window.innerWidth >= 1024) {
   renderCards = async function (category) {
     await reverseAnimation();
 
-    const positionArray = categoryPositions[category];
 
     const uniqueClasses = [
       { cardHolder: "widthwala lg:w-[32vw] lg:h-64 overflow-hidden absolute left-[30%] top-20" },
@@ -72,11 +61,10 @@ if (window.innerWidth >= 1024) {
     let cluu = '';
 
     arrdata.forEach((el, index) => {
-      const positionClass = positionArray[index].toString();
       const uniqueClass = uniqueClasses[index];
       
       cluu += `
-        <div class="card-holder ${uniqueClass.cardHolder} ${positionClass}">
+        <div class="card-holder ${uniqueClass.cardHolder} ">
           <div class="${uniqueClass.card || (index === 1 || index === 2 ? 'cardHeight' : 'cardWidth') + ' card bg-gray-200 p-4 h-56 w-full flex justify-between items-center relative rounded-2xl lg:w-full lg:h-64 lg:rounded-md lg:p-4'}">
             <div class="${uniqueClass.cardHolder.includes('heightwala') ? 'w-full' : 'w-1/2'} flex flex-col justify-between lg:h-full pr-2">
               <div class="top">
@@ -92,11 +80,11 @@ if (window.innerWidth >= 1024) {
                 ${uniqueClass.cardHolder.includes('heightwala') ? `
                   <div class="holder absolute bottom-0 right-0 flex flex-col items-end">
                     <p class="text-xl font-semibold text-black lg:mb-2 lg:mr-4">$${el.rate}</p>
-                    <button class="px-4 py-2 rounded-lg bg-green-500 lg:text-xl">Buy Now</button>
+                    <button class=" best-buy-now border border-black px-4 py-2 rounded-lg  lg:text-xl">Buy Now</button>
                   </div>
                 ` : `
                   <p class="text-xl font-semibold text-black lg:mb-2 lg:mr-4">$${el.rate}</p>
-                  <button class="px-4 py-2 rounded-lg bg-green-500 lg:text-xl">Buy Now</button>
+                  <button class="best-buy-now border border-black px-4 py-2 rounded-lg  lg:text-xl">Buy Now</button>
                 `}
               </div>
             </div>
@@ -120,7 +108,9 @@ if (window.innerWidth >= 1024) {
         } 
       },
       { 
-        x: "0%", scale: 1, duration: 0.6, stagger: 0.04, ease: "power4"
+        x: "0%", scale: 1,  duration: 0.6,
+        stagger: 0.03,
+        ease: "expo.ease",
       }
     )
     .fromTo(
@@ -132,7 +122,9 @@ if (window.innerWidth >= 1024) {
         scale: 0 
       },
       { 
-        y: "0%", scale: 1, duration: 0.6, stagger: 0.04, ease: "power4"
+        y: "0%", scale: 1,  duration: 0.6,
+        stagger: 0.03,
+        ease: "expo.ease",
       },
       "<"
     );
@@ -157,7 +149,7 @@ if (window.innerWidth >= 1024) {
               <i class="ri-star-fill"></i>
               <i class="ri-star-half-fill"></i>
               <p class="text-xl font-semibold text-black">$${el.rate}</p>
-              <button class="px-4 py-2 rounded-lg bg-green-500">Buy Now</button>
+              <button class=" px-4 my-2 py-2 rounded-lg bg-black text-white">Buy Now</button>
             </div>
           </div>
           <div class="img-cont w-1/2">
@@ -179,6 +171,7 @@ gsap.to('#face', {
   duration: 0.7,
 });
 
+  
 cateP.forEach((elem) => {
   elem.addEventListener("click", () => {
     let id = elem.getAttribute('id');
@@ -187,7 +180,7 @@ cateP.forEach((elem) => {
     cateP.forEach((el) => {
       gsap.to(el, {
         backgroundColor: "#000",
-        opacity: 0.7,
+        opacity: 0.6,
         ease: "expo.ease",
         duration: 0.7,
       });

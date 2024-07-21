@@ -26,7 +26,7 @@ export function homeAnim() {
 
     },
 
-  });
+  } ,"<+=0.5");
 
   let scrollTl = gsap.timeline();
 

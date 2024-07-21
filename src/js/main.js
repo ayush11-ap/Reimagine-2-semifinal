@@ -5,40 +5,46 @@ import '../css/coustom.css'
 
 
 import { locomotiveJs } from "./utils";
-import { pageCreation } from './pageCreation.js';
 import { loderAnim } from "./loder";
 import { homeAnim } from "./home";
 import { menuAnimation } from "./menuAnimation";
-import { certificateAnim } from './certificate';
 import { videoSection } from './videosection.js';
-import { categoryAnim } from './categoryAnim.js';
-import { referFreind } from './refer.js';
+
+import { pageCreation } from './pageCreation.js';
 import { dewAnim } from './dewBrown.js';
 
-Shery.makeMagnet(".magnet-effect" , {
+import { categoryAnim } from './categoryAnim.js';
 
-    ease: "elastic",
-    duration: 1.5,
-  });
+import { certificateAnim } from './certificate';
+import { referFreind } from './refer.js';
 
 
 
 
 locomotiveJs();
-pageCreation();
-certificateAnim();
-categoryAnim();
-videoSection();
-referFreind();
-// loderAnim(homeAnim);
-homeAnim();
-dewAnim();
-
+loderAnim(homeAnim);
+// homeAnim();
 menuAnimation();
+videoSection();
+pageCreation();
+dewAnim();
+categoryAnim();
+
+
+
+referFreind();
+certificateAnim();
 
 
 
 
 
+
+
+Shery.makeMagnet(".magnet-effect" , {
+
+  ease: "elastic",
+  duration: 1.5,
+});
 
 

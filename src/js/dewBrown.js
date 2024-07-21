@@ -2,27 +2,34 @@ import { DewBrownData } from "../data/dewbrown.js"
 
 
 let data = DewBrownData;
-export function dewAnim() {
-   
+
+
+ export function dewAnim() {
+  
 
 
 let baap=document.querySelector(".upperdes")
 
 let mobileImg=document.querySelector(".mobileimg")
-function renderdata(index){
-let individualdata=data[index]
-let splitdata=individualdata.specs.split(",")
+let best_img=document.querySelector(".best-img img")
 
-let text1=""
-splitdata.forEach((data)=>{
-  text1+=`<div><i class="ri-check-line"></i>${data}</div>`
-})
+let images = document.querySelectorAll(".images1");
 
-// console.log(individualdata)
-let text=`<div class="upperdes flex flex-col gap-1">
-                <div class="name h-30 w-full text-3xl font-bold flex justify-between p-2 sm:text-6xl">
-                    <h1>${individualdata.name}</h1>
-                    <h1 class="text-slate-400 text-xl sm:text-4xl">$79.9</h1>
+function renderdata(index) {
+    let individualdata = data[index];
+    let splitdata = individualdata.specs.split(",");
+
+    let text1 = "";
+    splitdata.forEach((data) => {
+        text1 += `<div><i class="ri-check-line"></i>${data}</div>`;
+    });
+
+    let text = `<div class="upperdes flex flex-col gap-1">
+                <div class="name overflow-hidden h-30 w-full text-3xl font-bold flex justify-between p-2 sm:text-6xl">
+
+                    <h1 class="headingname">${individualdata.name}</h1>
+                    <h1 class="headingname text-slate-400 text-xl sm:text-4xl">${individualdata.price}</h1>
+
                 </div>
                 
                 <div class="rating text-xl  w-fit h-fit">
@@ -47,44 +54,91 @@ let text=`<div class="upperdes flex flex-col gap-1">
                 <div class="details hidden sm:flex sm:font-thin">
                   ${individualdata.details}
                   </div>
-                </div>`
-                mobileImg.src=individualdata.image
-                baap.innerHTML=text
-                // console.log(text)
+                </div>`;
+
+    mobileImg.src = individualdata.image;
+    best_img.src = individualdata.image;
+
+    baap.innerHTML = text;
+    console.log(text)
+
+    gsap.fromTo(best_img, {
+        rotate: 90,
+        scale: 0,
+        ease: "expo.ease",
+        duration: 0.5,
+    },
+    {
+        rotate: 0,
+        scale: 1,
+        ease: "expo.ease",
+        duration: 0.5,
+    });  
+
+    gsap.fromTo(".headingname", {
+      
+      x: function( idx){
+         if(idx==0){
+          return "-100%"
+         } else{
+          return "100%"
+         }
+      },
+      ease: "expo.ease",
+      duration: 0.5,
+  },
+  {
+      
+    x: 0,
+      ease: "expo.ease",
+      duration: 0.5,
+  });
 }
 
+images.forEach((image) => {
+    image.style.opacity = "0.6";
+});
+
+images.forEach((image, index) => {
+    image.addEventListener("click", () => {
+        images.forEach((img) => {
+            img.style.opacity = "0.4";
+        });
+
+        image.style.opacity = "1";
+
+        renderdata(index);
+    });
+});
 
 
+renderdata(0);
+images[0].style.opacity = "1"; 
 
+let arrow = document.querySelectorAll(".arrow");
+let idx = 1;
+arrow.forEach((arrow, index) => {
+    arrow.addEventListener("click", () => {
+        renderdata(idx);
 
+        images.forEach((img) => {
+            img.style.opacity = "0.4";
+        });
 
+        if (index == 1) {
+            idx++;
+            if (idx == data.length) {
+                idx = 0;
+            }
+        } else {
+            idx--;
+            if (idx < 0) {
+                idx = data.length - 1;
+            }
+        }
 
-let images=document.querySelectorAll(".images1")
-images.forEach((image,index)=>{
-  image.addEventListener("click",()=>{
-    renderdata(index)
-  })
-})
-// renderdata(0)    
-let arrow=document.querySelectorAll(".arrow")
-let idx=1
-arrow.forEach((arrow,index)=>{
-  arrow.addEventListener("click",()=>{
-    
-    renderdata(idx)
-    if(index==1)  {
-    idx++
-    if(idx==data.length){
-      idx=0
-    }
-  }else{
-    idx--
-    if(idx<0){
-      idx=data.length-1
-    }
-    
-  }
- 
-  })
-})
- } 
+        images[idx].style.opacity = "1";
+    });
+});
+
+}

@@ -27,16 +27,22 @@ let tl = gsap.timeline({
 });
 
      
-     tl.from(".product2-section", {
-        yPercent: 100,
-        scale: 0,
-})  
+     tl
          
          
+                          
+    .to(".product2-section", {
+        
+        scale: 0.98,
+})   
+    
     .from(".product3-section", {
         yPercent: 100,
-        scale: 0,
-})  // here you can add mor options how you incoming page should be 
+    }, "<+=0.2")  
+         
+    .to(".product3-section", {
+      scale:0.95
+},"<+=0.2")  
 
     
     

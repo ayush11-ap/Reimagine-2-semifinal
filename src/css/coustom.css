@@ -117,3 +117,67 @@ transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 opacity: 1;
 
 }
+
+
+
+.images1{
+  background: hsla(186, 33%, 94%, 1);
+
+  background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+  
+  background: -moz-linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+  
+  background: -webkit-linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EBF4F5", endColorstr="#B5C6E0", GradientType=1 );
+}
+.best-buy-now {
+  overflow: hidden;
+  position: relative;
+}
+
+.best-buy-now:hover {
+  color: white;
+  transition: color 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.best-buy-now::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  z-index: -1;
+  background-color: black;
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.best-buy-now:hover::before {
+  transform: translateX(0%);
+}
+
+
+.btn {
+  position: relative;
+  border: none;
+  transition: all 0.5s;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: transparent;
+  color: white;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+
+.btn:hover {
+  background: #f6e05e;
+  box-shadow: 0 4px 5px #f6e05e, 0 0 17px #f6e05e, 0 0 25px #f6e05e, 0 0 48px #f6e05e, 0 0 25px #f6e05e;
+  color: #333;
+}

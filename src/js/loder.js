@@ -46,7 +46,7 @@ export function loderAnim(homeAnim) {
   .to(
     ".left-side  , .right-side",
     {
-      width: "64%",
+      width: "70%",
       duration: function () {
         if (window.innerWidth < 620) {
           return 0.5;
@@ -74,6 +74,7 @@ export function loderAnim(homeAnim) {
   }, "<")
 
   if (window.innerWidth < 620) {
+    
     tl.to(
       "  .final-name ",
       {
@@ -100,19 +101,15 @@ export function loderAnim(homeAnim) {
     {
       top: "4%",
       duration: 0.4,
-      scale: function () {
-        if (window.innerWidth < 620) {
-          return 0.4;
-        } else {
-          return 0.3;
-        }
-      },
+      opacity:0 ,
       ease: "power4",
     },
     "<+=0.4"
   )
   .to(".left-side , .right-side", {
-    opacity: 0,
+    scale: 0,
+    opacity: 0 ,
+    borderRadius:"50%",
     onComplete: homeAnim,
   });
 }

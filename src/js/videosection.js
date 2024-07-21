@@ -1,6 +1,8 @@
  export function videoSection() {
      
-     let video = document.querySelector("#video")
+   let video = document.querySelector("#video")
+   
+   
       
      console.log(videoSection.muted)
      
@@ -19,7 +21,9 @@
         width: "3rem",
         duration: 0.4,
         opacity:1
-    },"<+=0.3")
+    }, "<+=0.3")
+   
+   
     document.querySelector(".video-section").addEventListener("click",()=> {
         tl.play();
        video.muted = !video.muted;
