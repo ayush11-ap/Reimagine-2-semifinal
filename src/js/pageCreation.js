@@ -27,13 +27,21 @@ let tl = gsap.timeline({
 });
 
      
+function Scaled() {
+    if (window.innerWidth <= 620) {
+         return 1
+    } else { 
+        0.98
+     }
+}
+     
      tl
          
          
                           
     .to(".product2-section", {
         
-        scale: 0.98,
+        scale: Scaled,
 })   
     
     .from(".product3-section", {
@@ -41,7 +49,7 @@ let tl = gsap.timeline({
     }, "<+=0.2")  
          
     .to(".product3-section", {
-      scale:0.95
+      scale:Scaled
 },"<+=0.2")  
 
     
