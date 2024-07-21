@@ -100,16 +100,16 @@ export function loderAnim(homeAnim) {
     "  .final-name ",
     {
       top: "4%",
-      duration: 0.4,
-      opacity:0 ,
+      duration: 0.8,
+      opacity: 0,
+      scale:0.5 ,
+      height : 0 ,
       ease: "power4",
     },
     "<+=0.4"
   )
   .to(".left-side , .right-side", {
-    scale: 0,
-    opacity: 0 ,
-    borderRadius:"50%",
+    height:0 ,
     onComplete: homeAnim,
-  });
+  },"<");
 }
