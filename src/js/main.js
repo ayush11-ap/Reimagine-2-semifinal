@@ -30,8 +30,8 @@ certificateAnim();
 categoryAnim();
 videoSection();
 referFreind();
-loderAnim(homeAnim);
-// homeAnim();
+// loderAnim(homeAnim);
+homeAnim();
 dewAnim();
 
 menuAnimation();

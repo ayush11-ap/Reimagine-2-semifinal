@@ -118,9 +118,6 @@ export function referFreind() {
                 opacity: 0,
                 pointerEvents: "none"
             });
-            tl2.to(".refer-card", { scale: 0.8 }, "<");
-            tl2.set(".submitted", { display: "block" });
-            tl2.fromTo(".submited", { opacity: 0, y: 230 }, { opacity: 1, y: -260 });
         });
     }
     

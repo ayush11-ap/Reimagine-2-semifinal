@@ -173,7 +173,7 @@ if (window.innerWidth >= 1024) {
 
 renderCards('face');
 gsap.to('#face', {
-  backgroundColor: "blue",
+  backgroundColor: "#561C24",
   opacity: 1,
   ease: "expo.ease",
   duration: 0.7,
@@ -186,7 +186,7 @@ cateP.forEach((elem) => {
 
     cateP.forEach((el) => {
       gsap.to(el, {
-        backgroundColor: "#e2e8f0",
+        backgroundColor: "#000",
         opacity: 0.7,
         ease: "expo.ease",
         duration: 0.7,
@@ -194,7 +194,7 @@ cateP.forEach((elem) => {
     });
 
     gsap.to(elem, {
-      backgroundColor: "blue",
+      backgroundColor: "#561C24",
       opacity: 1,
       ease: "expo.ease",
       duration: 0.7,

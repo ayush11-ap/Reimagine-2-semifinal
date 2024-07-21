@@ -4,7 +4,7 @@
 
 @layer components {
   .menu-links-a {
-    @apply font-[Raleway] relative text-6xl sm:text-7xl text-red-600  sm:leading-[96px] font-semibold capitalize translate-y-[100%] inline-block leading-[72px] tracking-wider border-none;
+    @apply font-[Raleway] relative text-6xl sm:text-7xl text-black  sm:leading-[96px] font-semibold capitalize translate-y-[100%] inline-block leading-[72px] tracking-wider border-none;
   }
 
   .nav-img {
@@ -40,7 +40,10 @@
     @apply font-['ralewayR'] capitalize tracking-wider text-2xl font-thin hidden lg:block lg:text-xl  lg:leading-6 lg:tracking-normal 
   }
   
-
+  /* Navbar */
+.menu-links-a{
+  @apply font-[HelveticaNeueL]
+}
 
   
 
@@ -55,6 +58,7 @@
 html, body {
   height: 100%;
   width: 100%;
+  font-family: 'ralewayR';
 }
 
 

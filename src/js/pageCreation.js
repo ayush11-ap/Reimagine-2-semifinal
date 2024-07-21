@@ -27,16 +27,7 @@ let tl = gsap.timeline({
 });
 
      
-     tl
-         
-         
-     .from(".product1-section", {
-        yPercent: 100,
-        scale: 0,
-})  
-  
-    
-     .from(".product2-section", {
+     tl.from(".product2-section", {
         yPercent: 100,
         scale: 0,
 })  

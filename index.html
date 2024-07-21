@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>SAIE Document</title>
     <link rel="stylesheet" href="/style.css" />
     <link
       rel="stylesheet"
@@ -35,55 +35,36 @@
         Play reel
       </div>
 
-      <div
-        class="loder  overflow-hidden z-[9999] pointer-events-none absolute top-0 left-0 flex justify-center h-screen items-center"
-      >
-        <div
-          class="z-[10] loder-wrapper bg-white w-screen flex justify-center items-center relative h-screen overflow-hidden"
-        >
-          <div
-            class="z-[12] left-side absolute h-full top-0 left-0 w-[0%] bg-slate-900 rounded-tr-[100px] rounded-br-[100px]"
-          ></div>
-
-          <div
-            class="z-[12] right-side absolute h-full top-0 right-0 w-[0%] bg-slate-900 rounded-tl-[100px] rounded-bl-[100px]"
-          ></div>
-
-          <h1
-            class="initial-name text-center text-8xl text-black font-[montserrat] font-semibold"
-          >
-            <span class="text-left tracking-widest inline-block">Sa</span
-            ><span class="text-right tracking-widest inline-block">ie</span>
-          </h1>
-
-          <h1
-            class="z-[14] text-white final-name absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-[Catavalo] tracking-[8px] opacity-0 text-8xl"
-          >
-            Saie
-          </h1>
-
-          <div
-            class="progess-container items-center absolute bottom-20 w-full flex justify-between px-8 sm:px-16 gap-8 left-1/2 -translate-x-1/2"
-          >
-            <div
-              class="border-slate-600 overflow-hidden border-2 h-3 rounded-lg w-[90%]"
-            >
-              <h1 class="h-full progress-bar w-0 bg-slate-700"></h1>
-            </div>
-            <p
-              class="counter w-[50px] font-[Raleway] font-medium text-2xl text-black"
-            >
-              00
-            </p>
+  <!-- LOADER Section -->
+    <div class="loder opacity-0 overflow-hidden z-[9999] pointer-events-none absolute top-0 left-0 flex justify-center h-screen items-center">
+      <div class="z-[10] loder-wrapper bg-white w-screen flex justify-center items-center relative h-screen overflow-hidden">
+        <div class="z-[12] left-side absolute h-full top-0 left-0 w-[0%] bg-slate-900 rounded-tr-[100px] rounded-br-[100px]"></div>
+        <div class="z-[12] right-side absolute h-full top-0 right-0 w-[0%] bg-slate-900 rounded-tl-[100px] rounded-bl-[100px]"></div>
+        
+        <h1 class="initial-name text-center text-8xl text-black font-[montserrat] font-semibold">
+          <span class="text-left tracking-widest inline-block">Sa</span>
+          <span class="text-right tracking-widest inline-block">ie</span>
+        </h1>
+        
+        <h1 class="z-[14] text-white final-name absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-[Catavalo] tracking-[8px] opacity-0 text-8xl">
+          Saie
+        </h1>
+        
+        <div class="progess-container items-center absolute bottom-20 w-full flex justify-between px-8 sm:px-16 gap-8 left-1/2 -translate-x-1/2">
+          <div class="border-slate-600 overflow-hidden border-2 h-3 rounded-lg w-[90%]">
+            <h1 class="h-full progress-bar w-0 bg-slate-700"></h1>
           </div>
+          <p class="counter w-[50px] font-[Raleway] font-medium text-2xl text-black">00</p>
         </div>
       </div>
+    </div>
+      
 
       <div class="main-menu overflow-hidden absolute top-0 w-screen h-screen">
         <div
           class="z-[9990] bg-transparent overflow-hidden inner relative w-screen h-0"
         >
-          <div class="menuContent bg-green-900 text-gray-200 h-0 p-8 sm:p-16">
+          <div class="menuContent bg-amber-200 text-zinc-800 h-0 p-8 sm:p-16">
             <div class="icons flex w-full justify-between">
               <i
                 class="w-12 h-12 flex justify-center items-center magnet-effect rounded-full bg-white text-black menu-complete text-2xl sm:text-3xl sm:h-16 sm:w-16 ri-close-large-fill"
@@ -157,7 +138,7 @@
               </p>
 
               <div
-                class="images py-12 hidden sm:flex h-[52vh] relative gap-10 overflow-hidden w-[28vw]"
+                class="images py-12 hidden sm:flex h-[59vh] relative gap-10 overflow-hidden w-[32vw]"
               >
                 <img class="nav-img" src="assets/nav/nav-1.jpg" alt="" />
                 <img class="nav-img" src="assets/nav/nav-2.jpg" alt="" />
@@ -184,15 +165,18 @@
         </div>
       </div>
 
-      <main class="main w-screen bg-slate-800">
+      <main class="main w-screen bg-gradient-to-tr from-orange-200 via-amber-300 to-orange-900">
         <div
-          class="home overflow-hidden relative p-4 w-screen h-screen bg-slate-900 flex justify-center items-center"
+          class="home overflow-hidden relative p-4 w-screen h-screen flex justify-center items-center"
         >
           <div
-            class="nav-icons z-[200] absolute font-light text-3xl sm:text-2xl top-4 text-white flex items-center justify-between px-4 w-full sm:justify-center sm:gap-[172px]"
+            class="nav-icons z-[200] absolute font-light text-3xl sm:text-2xl top-4 text-white flex items-center justify-between px-4 w-full sm:justify-center sm:gap-[142px]"
           >
             <div class="one flex gap-8">
               <i class="ri-search-2-line"></i>
+            </div>
+            <div class="saie-logo w-[8%]">
+              <img class="w-full h-full object-cover" src="/saie-logo.png" alt="">
             </div>
             <div class="two flex gap-8">
               <i class="menu ri-menu-4-line"></i>
@@ -209,11 +193,9 @@
             </h1>
 
             <p
-              class="text-amber-50 mt-4 font-[Raleway] text-md tracking-wide opacity-75 sm:mx-auto sm:w-2/3"
+              class="font-semibold mt-4 font-[Raleway] text-lg tracking-wide sm:text-center opacity-75 sm:mx-auto sm:w-[60%]"
             >
-              It's officially the best time of year. We've got all the
-              effortless essentials you need from mineral SPF to nourishing
-              bronzers.
+            From mineral SPF to bronzers, scroll down for your perfect summer glow!
             </p>
           </div>
 
@@ -399,9 +381,7 @@
   
 
 
-<div class="product1-section top-0 left-0 absolute bg-red-500 w-screen h-screen">
-   Product-1 -section
-</div>
+
 
 
 
@@ -488,19 +468,19 @@
 </div>
 
 
-
+  <!-- Product 3 -->
           <div
-            class="product3-section top-0 left-0 absolute bg-red-900 w-screen h-screen"
+            class="product3-section top-0 left-0 absolute w-screen h-screen"
           >
           <div class=" w-screen h-screen flex flex-col lg:relative ">
-    <div class="category flex items-center justify-around w-full h-10 my-4 py-4 lg:flex-col lg:h-1/3 lg:absolute lg:top-1/2 lg:-translate-y-1/2 z-[100] right-0 lg:w-1/6 lg:items-end lg:right-4  ">
-        <p id="face" class="font-semibold p3-para text-xl cursor-pointer flex justify-center items-center px-4 py-2 bg-slate-300 rounded-2xl">face</p>
-        <p id="eyes" class="font-semibold p3-para text-xl cursor-pointer px-4 py-2 bg-slate-300 rounded-2xl flex justify-center items-center">eyes</p>
-        <p id="lips" class="font-semibold p3-para text-xl cursor-pointer px-4 py-2 bg-slate-300 rounded-2xl flex justify-center items-center">lips</p>
-        <p id="cheek" class="font-semibold p3-para text-xl cursor-pointer px-4 py-2 bg-slate-300 rounded-2xl flex justify-center items-center">cheek</p>
+    <div class="category flex items-center justify-around gap-8 w-full h-10 my-4 py-4 lg:flex-col lg:h-1/3 lg:absolute lg:top-1/2 lg:-translate-y-1/2 z-[100] right-0 lg:w-1/6 lg:items-end lg:right-4  ">
+        <p id="face" class="font-semibold w-[9vw] p3-para text-xl cursor-pointer flex justify-center items-center px-4 py-2 uppercase text-white bg-black rounded-2xl">face</p>
+        <p id="eyes" class="font-semibold w-[9vw] p3-para text-xl cursor-pointer px-4 py-2 uppercase text-white bg-black rounded-2xl flex justify-center items-center">eyes</p>
+        <p id="lips" class="font-semibold w-[9vw] p3-para text-xl cursor-pointer px-4 py-2 uppercase text-white bg-black rounded-2xl flex justify-center items-center">lips</p>
+        <p id="cheek" class="font-semibold w-[9vw] p3-para text-xl cursor-pointer px-4 py-2 uppercase text-white bg-black rounded-2xl flex justify-center items-center">cheek</p>
     </div>
 
-    <div class="cards  w-full  flex flex-col gap-4 p-4 lg:h-full bg-slate-600">
+    <div class="cards  w-full  flex flex-col gap-4 p-4 lg:h-full bg-red-100">
 
      
 
@@ -510,10 +490,7 @@
         
         </div>
 
-
-
-
-
+  <!-- Refer Section -->
           <div
             class="refer-section top-0 left-0 absolute w-screen bg-blue-400 h-screen"
           >
@@ -522,9 +499,9 @@
       
               <div class="refer-card w-[70%] bg-white container rounded-md relative my-10 flex flex-col lg:w-[60%] lg:h-fit">
       
-                <div class="refer-circular-text h-[120px] w-[120px] lg:h-[200px] lg:w-[200px] absolute rounded-full -top-[60px] -right-[60px] lg:-top-[100px] lg:-right-[100px] opacity-70 flex items-center justify-center">
+                <div class="refer-circular-text h-[120px] w-[120px] lg:h-[200px] lg:w-[200px] absolute rounded-full -top-[60px] -right-[60px] lg:-top-[100px] lg:-right-[100px] opacity-95 flex items-center justify-center">
                   <div class="refer-arrow absolute h-[80px] w-[80px] lg:h-[120px] lg:w-[120px] bg-amber-500 rounded-full flex items-center justify-center rotate-45">
-                    <img class="scale-150" src="/fonts/Group.png" alt="">
+                    <img class="scale-150" src="https://res.cloudinary.com/ddevpn5ix/image/upload/v1721560910/Reiagine-2-project/wfwducuxhd0tjzfnmdtb.png" alt="">
                   </div>
                   <div class="refer-text absolute w-full h-full flex left-1/2">
                     <p class="font-['MontserratSB']">Gift $10 - Receive $10 -</p>
@@ -532,16 +509,16 @@
                 </div>
       
                 <div class="upper-div mt-3">
-                  <h1 class="font-['ralewayR'] capitalize pl-4 py-2 text-4xl lg:hidden">Refer, <br> a Friend.</h1>
+                  <h1 class="font-['ralewayR'] capitalize pl-4 py-2 text-4xl lg:text-center lg:text-5xl">Refer, <br class="lg:hidden"> a Friend.</h1>
                 </div>
       
-                <div class="refer-hero relative lg:flex lg:flex-1 lg:px-4 lg:w-full">
+                <div class="refer-hero relative lg:flex lg:flex-1 lg:px-4 lg:w-full lg:mt-5">
       
                   <div class="refer-left flex flex-col lg:gap-2 lg:w-1/2">
-                    <h1 class="font-['ralewayR'] pl-4 py-2 text-6xl hidden lg:block">Refer a Friend.</h1>
-                    <p class="px-4 font-['HelveticaNeueL'] text-lg tracking-wide leading-normal lg:text-2xl">Give $10 off to friends' first orders, earn $10 in points per referral.</p>
+                    <!-- <h1 class="font-['ralewayR'] pl-4 py-2 text-6xl hidden lg:block">Refer a Friend.</h1> -->
+                    <p class="px-4 font-['HelveticaNeueL'] text-lg tracking-wide leading-normal lg:text-xl">Give $10 off to friends' first orders, earn $10 in points per referral.</p>
                     <div class="upper-img h-36 lg:h-[80%]">
-                      <img class="w-[60%] h-full mx-auto object-cover object-top lg:h-full lg:w-[80%]" src="https://res.cloudinary.com/ddevpn5ix/image/upload/v1721544689/Reiagine-2-project/faddormviicfzwawnrwg.png" alt="">
+                      <img class="w-[60%] h-full mx-auto object-cover object-top lg:h-full lg:w-[80%] lg:mt-1" src="https://res.cloudinary.com/ddevpn5ix/image/upload/v1721544689/Reiagine-2-project/faddormviicfzwawnrwg.png" alt="">
                     </div>
                   </div>
       
@@ -552,7 +529,7 @@
       
                       <div class="input-container">
                         <p class="placeholder">Name:</p>
-                        <input class="input-name input pt-2" type="text" name="name" autocomplete="off">
+                        <input class="input-name input pt-2 lg:px-2" type="text" name="name" autocomplete="off">
                           <svg class="line-svg w-full" width="300" height="2" viewBox="0 0 300 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="elastic-line" d="M0 0.999512C0 0.999512 60.5 0.999512 150 0.999512C239.5 0.999512 300 0.999512 300 0.999512" stroke="#D1D4DA" stroke-width="2"/>
                         </svg>
@@ -560,7 +537,7 @@
       
                       <div class="input-container">
                         <p class="placeholder">E-mail:</p>
-                        <input class="input-email input pt-2" type="email" name="email" autocomplete="off">
+                        <input class="input-email input pt-2 lg:px-2" type="email" name="email" autocomplete="off">
                           <svg class="line-svg w-full" width="300" height="2" viewBox="0 0 300 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="elastic-line" d="M0 0.999512C0 0.999512 60.5 0.999512 150 0.999512C239.5 0.999512 300 0.999512 300 0.999512" stroke="#D1D4DA" stroke-width="2"/>
                         </svg>
@@ -568,12 +545,6 @@
                       <button class="text-xl px-6 py-2 bg-amber-300 w-1/2 rounded-lg font-bold self-center lg:w-full">Submit</button>
                     </form>
                   </div>
-      
-                  <!-- <div class="submited opacity-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                    <img src="/Assets/animated-gift.gif" alt="">
-                    <p>Thanks for refering</p>
-                  </div> -->
-      
                 </div>
               </div>
             </div>
@@ -581,6 +552,7 @@
         
         </div>
 
+  
         <div
         class="certificate-sections   top-0 left-0 absolute w-screen h-[100vh] certi_main bg-zinc-800 overflow-hidden lg:w-full lg:h-screen"
       >
@@ -602,7 +574,7 @@
 
 
           <div
-            class=" footer-section  top-0 left-0 absolute w-screen bg-green-400 h-full"
+            class=" footer-section top-0 left-0 absolute w-screen bg-green-400 h-full"
           >
             <div class="w-screen h-[37%] sm:h-[50%] bg-black retative">
               <div

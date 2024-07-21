@@ -10,7 +10,7 @@
   .menu-links-a::before {
     content: attr(data-content);
     position: absolute;
-    color: black;
+    color: rgb(188, 73, 44);
     width: 0;
     overflow: hidden;
     transition: width ease-in-out .5s;
@@ -73,7 +73,7 @@
   position: relative;
   z-index: 1;
   pointer-events: none;
-  padding: 0.2rem 0.2rem;
+  padding: 0.2rem 0.4rem;
   font-size: 1.2rem;
   opacity: 0.6;
   transform-origin: left;
