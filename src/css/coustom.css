@@ -85,3 +85,35 @@
   bottom: 0;
   overflow: visible;
 }
+
+footer a{
+  letter-spacing: 2px;
+  width: fit-content;
+}
+footer a{
+  position: relative;
+}
+footer a::after{
+content: ""; 
+width: 0%;
+/* border-bottom: 1px solid black; */
+height: 2%;
+/* margin: 2; */
+background-color: white;
+position: absolute;
+transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+bottom: -4px;
+
+left:0;
+}
+
+footer a:hover::after {
+width:100%;
+}
+
+footer a:hover{
+scale: 0.8;
+transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+opacity: 1;
+
+}

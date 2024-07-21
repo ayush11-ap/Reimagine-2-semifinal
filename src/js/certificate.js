@@ -31,7 +31,7 @@ let data = [
     }
 ];
 
-let colorData = ["green", "pink", "grey", "blue", "aqua"]; // you can change the color of th horizontal boxes
+let colorData = ["rgb(42,180,224)", "rgb(74, 222, 128)", "rgb(217, 119, 6)", "rgb(113, 113, 122)", "rgb(20, 184, 166)"]; // you can change the color of th horizontal boxes
 
 
 const lerp = (x, y, a) => x * (1 - a) + y * a;

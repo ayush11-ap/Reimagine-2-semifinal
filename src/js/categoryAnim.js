@@ -74,7 +74,7 @@ if (window.innerWidth >= 1024) {
     arrdata.forEach((el, index) => {
       const positionClass = positionArray[index].toString();
       const uniqueClass = uniqueClasses[index];
-
+      
       cluu += `
         <div class="card-holder ${uniqueClass.cardHolder} ${positionClass}">
           <div class="${uniqueClass.card || (index === 1 || index === 2 ? 'cardHeight' : 'cardWidth') + ' card bg-gray-200 p-4 h-56 w-full flex justify-between items-center relative rounded-2xl lg:w-full lg:h-64 lg:rounded-md lg:p-4'}">
