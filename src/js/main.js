@@ -11,7 +11,9 @@ import { homeAnim } from "./home";
 import { menuAnimation } from "./menuAnimation";
 import { certificateAnim } from './certificate';
 import { videoSection } from './videosection.js';
-
+import { categoryAnim } from './categoryAnim.js';
+import { referFreind } from './refer.js';
+import { dewAnim } from './dewBrown.js';
 
 Shery.makeMagnet(".magnet-effect" , {
 
@@ -25,9 +27,12 @@ Shery.makeMagnet(".magnet-effect" , {
 locomotiveJs();
 pageCreation();
 certificateAnim();
+categoryAnim();
 videoSection();
-// loderAnim(homeAnim);
-homeAnim();
+referFreind();
+loderAnim(homeAnim);
+// homeAnim();
+dewAnim();
 
 menuAnimation();
 

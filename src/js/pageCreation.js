@@ -27,24 +27,43 @@ let tl = gsap.timeline({
 });
 
      
-tl
-    .from(".page3", {
+     tl
+         
+         
+     .from(".product1-section", {
+        yPercent: 100,
+        scale: 0,
+})  
+  
+    
+     .from(".product2-section", {
+        yPercent: 100,
+        scale: 0,
+})  
+         
+         
+    .from(".product3-section", {
         yPercent: 100,
         scale: 0,
 })  // here you can add mor options how you incoming page should be 
 
-.from(".page4", {
+    
+    
+.from(".refer-section", {
+    yPercent:100
+})
+
+    
+    
+.from(".certificate-sections", {
     xPercent:"-100"
 })
 
 
-.from(".page5", {
-    yPercent:-100
-})
 
 
-.from(".page6", {
-    xPercent:100
+.from(".footer-section ", {
+    yPercent:100
 })
 
 
