@@ -26,7 +26,11 @@ loderAnim(homeAnim);
 // homeAnim();
 menuAnimation();
 videoSection();
-pageCreation();
+
+
+if (window.innerWidth >= 620) {
+  pageCreation();
+}
 dewAnim();
 categoryAnim();
 
