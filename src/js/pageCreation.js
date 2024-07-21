@@ -3,7 +3,7 @@
 
 
  export function pageCreation() {
-    let extra1 = "+=2000" 
+    let extra1 = "+=4000" 
     let extra2 = "+=5000" 
 
 let tl = gsap.timeline({
