@@ -54,7 +54,7 @@ if (window.innerWidth >= 1024) {
         card: "card cardHeight bg-gray-200 p-4 h-56 w-full flex justify-between items-center relative rounded-2xl lg:w-full lg:h-full lg:rounded-md lg:p-4 lg:flex-col-reverse lg:gap-2",
         imgCont: "img-cont w-full h-2/3"
       },
-      { cardHolder: "widthwala lg:w-[32vw] lg:h-64 overflow-hidden absolute bottom-36 right-[28%]" }
+      { cardHolder: "widthwala lg:w-[32vw] lg:h-64 overflow-hidden absolute bottom-32 right-[28%]" }
     ];
 
     let arrdata = categoryData[category];
