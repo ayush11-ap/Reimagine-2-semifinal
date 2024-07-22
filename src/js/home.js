@@ -39,11 +39,13 @@ export function homeAnim() {
     duration: 5,
     stagger: 0.08,
     onStart: function () {
-      $(".home-img-cont").tilt({
-        glare: false,
-        maxGlare: 0,
-        scale: 1,
-      });
+      if (window.innerWidth >= 620) {
+        $(".home-img-cont").tilt({
+          glare: false,
+          maxGlare: 0,
+          scale: 1,
+        });
+      }
       
 },
     scrollTrigger: {
