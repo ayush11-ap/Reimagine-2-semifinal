@@ -108,11 +108,11 @@
     eyes: [
         
         {
-            name: "SLIP TINT RADIANT ",
+            name: " RADIANT ",
             quantity: "5 ML / 0.17 FL oz",
-            rating: 4.0,
+            rating: 4.1,
             rate: 28,
-            img: "https://saiehello.com/cdn/shop/files/stcfeatured_1400x.png?v=1710724822"
+            img: "https://res.cloudinary.com/darb0oz4k/image/upload/v1721653864/dewblush-sliptint-gsg-duo_7deb09-removebg-preview_xakvdi.png"
 
         },
         {
