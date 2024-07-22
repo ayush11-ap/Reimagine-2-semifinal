@@ -72,17 +72,18 @@ html, body {
   font-family: 'Catavalo';
   src: url('/font/catavalo/TTF/Catavalo-Medium.ttf') format('truetype');
 }
-
 @font-face {
   font-family: 'DS';
-  src: url('/font/DancingScript-Regular.otf') format('opentype');
+  src: url('/fonts/DancingScript-Regular.otf') format('opentype');
 }
-
-
 @font-face {
   font-family: 'Allura-script';
   src: url('/fonts/Allura-Regular.otf') format('opentype');
 }
+
+
+
+/* ayush ne start kiya hai yaha se   */
 
 @font-face {
   font-family: 'Dancing-script';
