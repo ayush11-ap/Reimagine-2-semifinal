@@ -65,7 +65,7 @@ if (window.innerWidth >= 1024) {
       
       cluu += `
         <div class="card-holder ${uniqueClass.cardHolder} ">
-          <div class="${uniqueClass.card || (index === 1 || index === 2 ? 'cardHeight' : 'cardWidth') + ' card bg-gray-200 p-4 h-56 w-full flex justify-between items-center relative rounded-2xl lg:w-full lg:h-64 lg:rounded-md lg:p-4'}">
+          <div class="${uniqueClass.card || (index === 1 || index === 2 ? 'cardHeight' : 'cardWidth') + ' card bg-gray-200 p-4 h-56 w-full flex justify-between items-center relative rounded-3xl lg:w-full lg:h-64 lg:rounded-md lg:p-4'}">
             <div class="${uniqueClass.cardHolder.includes('heightwala') ? 'w-full' : 'w-1/2'} flex flex-col justify-between lg:h-full pr-2">
               <div class="top">
                 <h1 class="text-xl text-black font-semibold">${el.name}</h1>

@@ -148,11 +148,7 @@ const lerp = (x, y, a) => x * (1 - a) + y * a;
     });
 
    refer_freind.addEventListener("mouseleave", function () {
-        gsap.to(certi_box, {
-            backgroundColor: "transparent",
-            ease: "power4",
-            duration: 0.7,
-        });
+        
 
         gsap.to(refer_card, {
             x: 0,

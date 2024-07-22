@@ -27,13 +27,7 @@ let tl = gsap.timeline({
 });
 
      
-function Scaled() {
-    if (window.innerWidth <= 620) {
-         return 1
-    } else { 
-        0.98
-     }
-}
+
      
      tl
          
@@ -41,7 +35,9 @@ function Scaled() {
                           
     .to(".product2-section", {
         
-        scale: Scaled,
+        scale: 0.99,
+        ease: "back(4).out",
+            borderRadius: "5px"
 })   
     
     .from(".product3-section", {
@@ -49,7 +45,9 @@ function Scaled() {
     }, "<+=0.2")  
          
     .to(".product3-section", {
-      scale:Scaled
+        scale: 0.985,
+        ease: "back(4).out",
+                    borderRadius: "5px"
 },"<+=0.2")  
 
     
@@ -57,6 +55,11 @@ function Scaled() {
 .from(".refer-section", {
     yPercent:100
 })
+.to(".refer-section", {
+    scale: 0.975,
+    ease: "back(4).out",
+                        borderRadius: "5px"
+},"<+=0.2")  
 
     
     
