@@ -5,7 +5,7 @@
         {
             name: "Slip Tint Radiant ",
             quantity: "12ml/1.04 oz",
-            rating: 4.5,
+            rating: 3,
             rate:42,
             img: "https://saiehello.com/cdn/shop/files/stcfeatured_1400x.png?v=1710724822"
 
@@ -13,7 +13,7 @@
         {
             name: "GLOWY SUPER SKIN ",
             quantity: "30 ML / 1.01 oz",
-            rating: 4.8,
+            rating: 3.7,
             rate:40,
             img: "https://saiehello.com/cdn/shop/products/0023_Glowy_Super_Skin_Foundation_main_13-featured_1400x.png?v=1678734220"
 
@@ -29,7 +29,7 @@
         {
             name: "GLOWY SUPER GEL",
             quantity: "30 ML / 1 oz",
-            rating: 4.9,
+            rating: 5,
             rate: 28,
             img: "https://saiehello.com/cdn/shop/products/saie-glowy-super-gel-2022-featured-1_1400x.png?v=1667319393"
 
@@ -56,7 +56,7 @@
         {
             name: "DEW BLUSH",
             quantity: "12ml/ oz",
-            rating: 4.5,
+            rating: 2.5,
             rate: 25,
             img: "https://saiehello.com/cdn/shop/products/saie-dew-blush-rosy_236eac90-be61-4d6c-ad0e-bf6028046c4a_1400x.png?v=1646845484"
 
@@ -64,7 +64,7 @@
         {
             name: " LIP STACK",
             quantity: "12ml/ oz",
-            rating: 4.7,
+            rating: 3.5,
             rate: 42,
             img: "https://saiehello.com/cdn/shop/files/thelipstackhero_1400x.png?v=1693281012"
 
@@ -75,7 +75,7 @@
         {
             name: "DEW BRONZE",
             quantity: "12ml/ oz",
-            rating: 4.5,
+            rating: 3.5,
             rate: 25,
             img: "https://saiehello.com/cdn/shop/files/dew-bronze-sand_1400x.png?v=1712590622"
 
@@ -83,7 +83,7 @@
         {
             name: "DEW BLUSH",
             quantity: "12ML | .3 oz",
-            rating: 4.5,
+            rating: 5,
             rate: 22,
             img: "https://saiehello.com/cdn/shop/products/saie-dew-blush-rosy_236eac90-be61-4d6c-ad0e-bf6028046c4a_1400x.png?v=1646845484"
 
@@ -99,7 +99,7 @@
         {
             name: "SUN MELT",
             quantity: "30 ML / 1 oz",
-            rating: 4.0,
+            rating: 2,
             rate: 32,
             img: "https://saiehello.com/cdn/shop/products/saie-glowy-sun-melt-2022-featured-1_1400x.png?v=1667321075"
 
@@ -110,7 +110,7 @@
         {
             name: "SLIP TINT RADIANT ",
             quantity: "5 ML / 0.17 FL oz",
-            rating: 4.1,
+            rating: 4.0,
             rate: 28,
             img: "https://saiehello.com/cdn/shop/files/stcfeatured_1400x.png?v=1710724822"
 
@@ -118,7 +118,7 @@
         {
             name: "MASCARA 101",
             quantity: "12ml/ oz",
-            rating: 4.3,
+            rating: 1.3,
             rate: 28,
             img: "https://saiehello.com/cdn/shop/products/saie-mascara-101-primary_54260c3b-9aa9-43be-9245-2b029cac08b8_1400x.png?v=1667320017"
 
@@ -126,7 +126,7 @@
         {
             name: "HYDRABEAM",
             quantity: "12ml/ oz",
-            rating: 4.2,
+            rating: 3.2,
             rate: 28,
             img: "http://saiehello.com/cdn/shop/products/saie-hydrabeam-closed-05_1000x.png?v=1673470396"
 

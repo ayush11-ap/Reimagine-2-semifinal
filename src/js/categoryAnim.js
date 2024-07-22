@@ -68,15 +68,15 @@ if (window.innerWidth >= 1024) {
           <div class="${uniqueClass.card || (index === 1 || index === 2 ? 'cardHeight' : 'cardWidth') + ' card bg-gray-200 p-4 h-56 w-full flex justify-between items-center relative rounded-3xl lg:w-full lg:h-64 lg:rounded-md lg:p-4'}">
             <div class="${uniqueClass.cardHolder.includes('heightwala') ? 'w-full' : 'w-1/2'} flex flex-col justify-between lg:h-full pr-2">
               <div class="top">
-                <h1 class="text-xl text-black font-semibold">${el.name}</h1>
-                <p class="text-xl opacity-80 font-semibold">${el.quantity}</p>
+                <h1 class="text-xl  text-black font-semibold">${el.name}</h1>
+                <p class="text-xl  opacity-80 font-semibold">${el.quantity}</p>
               </div>
               <div class="bottom mt-2 relative">
                 ${Array.from({ length: 5 }, (_, i) => {
-                  const fullStar = i < Math.floor(el.rating) ? 'ri-star-fill' : '';
-                  const halfStar = i < el.rating && i >= Math.floor(el.rating) ? 'ri-star-half-fill' : '';
-                  return `<i class="${fullStar || halfStar}"></i>`;
-                }).join('')}
+                const fullStar = i < Math.floor(el.rating) ? 'ri-star-fill' : '';
+                const halfStar = i < el.rating && i >= Math.floor(el.rating) ? 'ri-star-half-fill' : '';
+                return `<i class="${fullStar || halfStar}"></i>`;
+              }).join('')}
                 ${uniqueClass.cardHolder.includes('heightwala') ? `
                   <div class="holder absolute bottom-0 right-0 flex flex-col items-end">
                     <p class="text-xl font-semibold text-black lg:mb-2 lg:mr-4">$${el.rate}</p>
@@ -99,8 +99,17 @@ if (window.innerWidth >= 1024) {
     let container = `<div class="cards-holder w-[92%] h-full p-4 relative">${cluu}</div>`;
     cards.innerHTML = container;
 
+
+
+    let catAnim = document.querySelectorAll('.catAnim');
+
+
+
     let tl = gsap.timeline();
-    tl.fromTo(
+    tl
+    
+      
+      .fromTo(
       ".cardWidth",
       { 
         x: function (idx){
@@ -143,11 +152,11 @@ if (window.innerWidth >= 1024) {
               <p class="  sm:text-xl opacity-80 font-semibold">${el.quantity}</p>
             </div>
             <div class="bottom mt-2">
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-half-fill"></i>
+              ${Array.from({ length: 5 }, (_, i) => {
+                const fullStar = i < Math.floor(el.rating) ? 'ri-star-fill' : '';
+                const halfStar = i < el.rating && i >= Math.floor(el.rating) ? 'ri-star-half-fill' : '';
+                return `<i class="${fullStar || halfStar}"></i>`;
+              }).join('')}
               <p class="text-xl font-semibold text-black">$${el.rate}</p>
               <button class=" px-4 my-2 py-2 rounded-lg bg-black text-white">Buy Now</button>
             </div>

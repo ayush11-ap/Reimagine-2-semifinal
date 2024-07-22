@@ -54,7 +54,7 @@ export function menuAnimation() {
     ".menuContent",
     {
       delay: () => {
-        return window.innerWidth <= 620 ? "-0.08" : "0.1";
+        return window.innerWidth <= 620 ? "-0.08" : "-0.3";
       },
       height: () => {
         return window.innerWidth <= 620 ? "95%" : "90%";
