@@ -20,7 +20,7 @@
     {
       name:"GLOWY SUPER GEL",
       image:"https://res.cloudinary.com/ddevpn5ix/image/upload/v1721544725/Reiagine-2-project/BROWN%20SECTION/g4gudp8on5w2nqilp7rq.png",
-      price:"$28",
+      price:"$22",
       rating:"4.3(1.8k)",
       specs:"Signature SaieGlow™ Approved,Lit-From-Within Glow,Hydrating",
       info:"Welcome to the glowiest, lightest weight luminizer. Wear it alone. Or under (or mixed with) foundation or tinted SPF as a primer. OR over any look for a super glowy finish. Feels like nothing. Looks like everything.",
@@ -29,7 +29,7 @@
     {
       name:"DEW BLUSH",
       image:"https://res.cloudinary.com/ddevpn5ix/image/upload/v1721544723/Reiagine-2-project/BROWN%20SECTION/rjqxjofxl8ohsma0ys6u.webp",
-      price:"$25",
+      price:"$36",
       rating:"4.5(1.2k)",
       specs:"Hydrating,Brightening,Natural Finish",
       info:"Blush, but better. Dew Blush is sure to be your holy-grail essential for an effortless flush. With its blendable, liquid-cream formula and chunky doe-foot applicator",
@@ -38,7 +38,7 @@
     {
       name:"HYDRABEAM",
       image:"https://res.cloudinary.com/ddevpn5ix/image/upload/v1721544724/Reiagine-2-project/BROWN%20SECTION/mtj2aaf3wltqjiy7roaq.webp",
-      price:"$28",
+      price:"$20",
       rating:"4.3(1.9k)",
       specs:"Hydrating + Plumping,Brightening,Smoothing",
       info:"Meet the eye brightener from the future. This no-makeup makeup essential has sheer, dewy coverage and a creamy texture that melts",
@@ -56,7 +56,7 @@
     {
       name:"SUNVISOR",
       image:"https://res.cloudinary.com/ddevpn5ix/image/upload/v1721547023/Reiagine-2-project/BROWN%20SECTION/lfjp7ha2hyvxv0bhjyb5.png",
-      price:"$28",
+      price:"$31",
       rating:"4.4(1.2k)",
       specs:"Signature SaieGlow™ Approved,Lit-From-Within Glow,Hydrating",
       info:"Welcome to the glowiest, lightest weight luminizer. Wear it alone. Or under (or mixed with) foundation or tinted SPF as a primer. OR over any look for a super glowy finish. Feels like nothing. Looks like everything.",
@@ -65,7 +65,7 @@
     {
       name:"AIRSET",
       image:"https://res.cloudinary.com/ddevpn5ix/image/upload/v1721547193/Reiagine-2-project/BROWN%20SECTION/rg3facoaehnvt7e99scq.png  ",
-      price:"$28",
+      price:"$23",
       rating:"4.0(2.2k)",
       specs:"Hydrating + Plumping,Brightening,Smoothing",
       info:"Supercharged with ingredients like Cucumber Extract and Glycerin, Hydrabeam is clinically proven to instantly illuminate and hydrate over time.",

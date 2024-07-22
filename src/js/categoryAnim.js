@@ -29,7 +29,7 @@ const reverseAnimation = () => {
           return "-100%";
         }
       },
-      duration: 0.6,
+      duration: 0.4,
       stagger: 0.03,
       ease: "expo.ease",
       onComplete: resolve,
@@ -108,7 +108,7 @@ if (window.innerWidth >= 1024) {
         } 
       },
       { 
-        x: "0%", scale: 1,  duration: 0.6,
+        x: "0%", scale: 1,  duration: 0.4,
         stagger: 0.03,
         ease: "expo.ease",
       }
@@ -122,7 +122,7 @@ if (window.innerWidth >= 1024) {
         scale: 0 
       },
       { 
-        y: "0%", scale: 1,  duration: 0.6,
+        y: "0%", scale: 1,  duration: 0.4,
         stagger: 0.03,
         ease: "expo.ease",
       },
@@ -137,10 +137,10 @@ if (window.innerWidth >= 1024) {
     arrdata.forEach((el) => {
       cluu += `
         <div class="card bg-gray-300 p-4 h-56 overflow-hidden w-full flex justify-between items-center relative rounded-2xl">
-          <div class="w-1/2 flex flex-col justify-between">
+          <div class="w-1/2 flex flex-col  justify-center sm:justify-between">
             <div class="top">
-              <h1 class="text-xl text-black font-semibold">${el.name}</h1>
-              <p class="text-xl opacity-80 font-semibold">${el.quantity}</p>
+              <h1 class="text-sm sm:text-xl text-black font-semibold">${el.name}</h1>
+              <p class=" text-sm sm:text-xl opacity-80 font-semibold">${el.quantity}</p>
             </div>
             <div class="bottom mt-2">
               <i class="ri-star-fill"></i>

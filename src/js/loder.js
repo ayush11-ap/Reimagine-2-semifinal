@@ -110,6 +110,11 @@ export function loderAnim(homeAnim) {
   )
   .to(".left-side , .right-side", {
     height:0 ,
-    onComplete: homeAnim,
+    onComplete: function () {
+      
+     
+      homeAnim();
+
+    },
   },"<");
 }

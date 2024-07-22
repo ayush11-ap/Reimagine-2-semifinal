@@ -25,9 +25,8 @@
 
   <body>
     <div class="whole-webstie">
-      <div
-        class="circle pointer-events-none z-[99] absolute rounded-full -translate-x-1/2 -translate-y-1/2 h-8 w-8 bg-red-600"
-      ></div>
+
+      <div class="circle2 opacity-0 h-8 w-8 bg-pink-600 pointer-events-none z-[99999] absolute rounded-full -translate-x-1/2 -translate-y-1/2  scale-50 "></div>
 
       <div
         class="circle-video pointer-events-none font-[Raleway] z-[99] absolute rounded-full -translate-x-1/2 -translate-y-1/2 h-28 w-28 opacity-0 scale-0 bg-gray-600/80 flex justify-center items-center text-xl"
@@ -172,7 +171,7 @@
 
       
 
-      <main class="main w-screen bg-gradient-to-tr from-orange-200 via-amber-300 to-orange-900">
+      <main class="main   w-screen bg-gradient-to-tr from-orange-200 via-amber-300 to-orange-900">
 
         
         <div
@@ -366,8 +365,8 @@
 
   <div class="video-section relative w-screen h-screen bg-gradient-to-tr from-orange-200 via-amber-300 to-orange-900">
     <video
-          class="  sm:hidden left-1/2 -translate-x-1/2 w-[80%] h-screen absolute top-0 object-cover"
-          src="https://res.cloudinary.com/ddevpn5ix/video/upload/v1721574323/Reiagine-2-project/zhdfsu2p3jvzmjpnaowa.mp4"
+          class="  sm:hidden left-1/2 -translate-x-1/2 w-[90%] h-screen absolute top-0 object-cover"
+          src="https://res.cloudinary.com/ddevpn5ix/video/upload/v1721640825/bhp3ikzpc6vdhxc7jisx.mp4"
           muted
           loop
           autoplay
@@ -388,7 +387,7 @@
               <video
               id="video"
               class=" sm:hidden w-full h-full object-cover"
-              src="https://res.cloudinary.com/ddevpn5ix/video/upload/v1721574323/Reiagine-2-project/zhdfsu2p3jvzmjpnaowa.mp4"
+              src="https://res.cloudinary.com/ddevpn5ix/video/upload/v1721640825/bhp3ikzpc6vdhxc7jisx.mp4"
               muted
               controls
               loop
@@ -406,7 +405,7 @@
               ></video>
              
               <i
-                class="w-0 opacity-0 h-0 flex absolute top-20 right-20 justify-center items-center z-[400] rounded-full bg-white text-black video-complete text-2xl sm:text-3xl ri-close-large-fill"
+                class="w-0 opacity-0 h-0 flex absolute top-4 right-4 sm:top-20 sm:right-20 justify-center items-center z-[400] rounded-full bg-white text-black video-complete text-2xl sm:text-3xl ri-close-large-fill"
               ></i>
             </div>
           </div>
@@ -480,7 +479,7 @@
                       <div class="upperdes flex flex-col gap-1">
                        
                         </div>
-            <button class="best-buy-now   bg-black text-slate-50  sm:border-black sm:bg-transparent sm:border   sm:text-black px-8 py-4  sm:font-bold rounded-lg text-xl sm:w-1/2 sm:mx-auto">BUY NOW</button>
+            <button class="best-buy-now    bg-black text-slate-50  sm:border-black sm:bg-transparent sm:border   sm:text-black px-8 py-4  sm:font-bold rounded-lg text-xl sm:w-1/2 sm:mx-auto">BUY NOW</button>
           </div>
         </div>            
 
@@ -492,17 +491,17 @@
 
   <!-- Product 3 -->
           <div
-            class="product3-section bg-slate-300 sm:top-0 sm:left-0 sm:absolute w-screen h-screen"
+            class="product3-section  bg-slate-300 sm:top-0 sm:left-0 sm:absolute w-screen h-screen"
           >
           <div class=" w-screen h-screen flex flex-col lg:relative ">
-    <div class="category flex items-center justify-around gap-4 sm:gap-8 w-full h-10 my-4 px-4 py-4 lg:flex-col lg:h-1/3 lg:absolute lg:top-1/2 lg:-translate-y-1/2 z-[100] right-0 lg:w-1/6 lg:items-end lg:right-4  ">
+    <div class="category flex items-center justify-around gap-4 sm:gap-8 w-full h-10 my-4 px-2 py-4 lg:flex-col lg:h-1/3 lg:absolute lg:top-1/2 lg:-translate-y-1/2 z-[100] right-0 lg:w-1/6 lg:items-end lg:right-2  ">
         <p id="face" class="font-semibold  sm:w-[9vw] p3-para text-xl cursor-pointer flex justify-center items-center px-4 py-2 uppercase text-white rounded-lg  sm:rounded-[100px] bg-[#561C24] opacity-[0.6] "> face</p>
         <p id="eyes" class="font-semibold  sm:w-[9vw] p3-para text-xl cursor-pointer px-4 py-2 uppercase text-white rounded-lg  sm:rounded-[100px] bg-[#561C24]  opacity-[0.6] flex justify-center items-center">eyes</p>
         <p id="lips" class="font-semibold  sm:w-[9vw] p3-para text-xl cursor-pointer px-4 py-2 uppercase text-white rounded-lg  sm:rounded-[100px] bg-[#561C24]  opacity-[0.6] flex justify-center items-center">lips</p>
         <p id="cheek" class="font-semibold  sm:w-[9vw] p3-para text-xl cursor-pointer px-4 py-2 uppercase text-white rounded-lg  sm:rounded-[100px] bg-[#561C24]  opacity-[0.6] flex justify-center items-center">cheek</p>
     </div>
 
-    <div class="cards  w-full  flex flex-col gap-4 p-4 lg:h-full bg-slate-300">
+    <div class="cards  overflow-auto  w-full  flex flex-col gap-4 p-4 h-screen lg:h-full bg-slate-300">
 
      
 
@@ -514,9 +513,9 @@
 
   <!-- Refer Section -->
           <div
-            class="refer-section sm:top-0 sm:left-0 sm:absolute w-screen bg-blue-400 h-screen"
+            class="refer-section overflow-hidden sm:top-0 sm:left-0 sm:absolute w-screen bg-blue-400 h-screen flex justify-center items-center"
           >
-          <div class="refer-friend w-full h-screen bg-gradient-to-r from-violet-300 to-fuchsia-300 overflow-hidden">
+          <div class="refer-friend w-full h-full bg-gradient-to-r from-violet-300 to-fuchsia-300 overflow-hidden">
             <div class="refer-auto w-full h-full flex items-center justify-center">
       
               <div class="refer-card w-[70%] bg-white container rounded-md relative my-10 flex flex-col lg:w-[60%] lg:h-fit">
@@ -577,7 +576,7 @@
   
   <!-- Certificate Section -->
         <div
-        class="certificate-sections sm:top-0 sm:left-0 sm:absolute w-screen h-[100vh] certi_main bg-zinc-800 overflow-hidden lg:w-full lg:h-screen"
+        class="certificate-sections  sm:top-0 sm:left-0 sm:absolute w-screen h-[100vh] certi_main bg-zinc-800  lg:w-full lg:h-screen"
       >
         <div
           class="relative sm:opacity-0 certi-img-holder pointer-events-none z-[99999] flex justify-center items-center lg:absolute lg:w-[360px] lg:h-[164px] lg:left-1/2 lg:-translate-x-1/2"
@@ -589,18 +588,18 @@
           />
         </div>
 
-        <div class="certificates"></div>
+        <div class="certificates "></div>
       </div>
 
 
 
 
 
-          <!-- <div
-            class=" footer-section sm:top-0 sm:left-0 sm:absolute w-screen bg-green-400 h-full"
+          <div
+            class="  footer-section sm:top-0 sm:left-0 sm:absolute w-screen bg-black h-full"
           >
           
- <div class="h-screen w-screen  relative">
+ <div class="h-screen  w-screen  ">
   <div class="w-screen h-[37%] sm:h-[50%] bg-black sm:retative ">
     <div
       class="inner sm:w-[98%] w-[95%] h-[35%] sm:h-[47%] sm:absolute  flex sm:top-3 bg-black left-3 border-2 justify-between items-center"
@@ -906,7 +905,7 @@
 
           </div>
 
- -->
+
 
         </div>
 

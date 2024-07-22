@@ -22,7 +22,9 @@ export function homeAnim() {
         scale: 1.2,
       });
       
-      mouseFollower();
+      if (window.innerWidth >= 620) {
+        mouseFollower();
+    }
 
     },
 

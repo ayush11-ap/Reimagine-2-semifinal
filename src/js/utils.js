@@ -1,9 +1,14 @@
 export function mouseFollower() {
-  let circle = document.querySelector(".circle");
+  let circle = document.querySelector(".circle2");
   let circle_video =document.querySelector(".circle-video")
 
+  gsap.set(circle, {
+    opacity:1,
+  })
   document.addEventListener("mousemove", (e) => {
 
+
+    
     gsap.to([circle_video, circle], {
       top: e.clientY,
       left: e.clientX,
@@ -40,14 +45,13 @@ export function mouseFollower() {
       },
       scale:function (idx) {
         if (idx == 0) { return 0 }
-        else{ return 1 }
+        else{ return 0.5 }
         
       },
     })
   })
 
 
-  
 
 
 }

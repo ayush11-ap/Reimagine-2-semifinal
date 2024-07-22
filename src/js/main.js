@@ -1,4 +1,3 @@
-import '../css/utils.css'
 import '../css/coustom.css'
 
 

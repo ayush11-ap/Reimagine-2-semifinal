@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'ralewayR';
+}
+
+
 @layer components {
   .menu-links-a {
     @apply font-[Raleway] relative text-6xl sm:text-7xl text-black  sm:leading-[96px] font-semibold capitalize translate-y-[100%] inline-block leading-[72px] tracking-wider border-none;
@@ -49,17 +62,6 @@
 
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  height: 100%;
-  width: 100%;
-  font-family: 'ralewayR';
-}
 
 
 
