@@ -64,7 +64,7 @@ if (window.innerWidth >= 1024) {
       const uniqueClass = uniqueClasses[index];
       
       cluu += `
-        <div class="card-holder ${uniqueClass.cardHolder} ">
+        <div class="card-holder shadow-2xl shadow-black/30 border border-slate-400 rounded-3xl ${uniqueClass.cardHolder} ">
           <div class="${uniqueClass.card || (index === 1 || index === 2 ? 'cardHeight' : 'cardWidth') + ' card bg-gray-200 p-4 h-56 w-full flex justify-between items-center relative rounded-3xl lg:w-full lg:h-64 lg:rounded-md lg:p-4'}">
             <div class="${uniqueClass.cardHolder.includes('heightwala') ? 'w-full' : 'w-1/2'} flex flex-col justify-between lg:h-full pr-2">
               <div class="top">
@@ -88,8 +88,8 @@ if (window.innerWidth >= 1024) {
                 `}
               </div>
             </div>
-            <div class="${uniqueClass.imgCont || 'img-cont w-1/2'}">
-              <img class="w-full bg-slate-300 rounded-3xl object-center h-full" src="${el.img}" alt="${el.name}">
+            <div class="${uniqueClass.imgCont || 'img-cont w-1/2'} ">
+              <img class="w-full bg-gradient-to-r from-orange-200 to-gray-400 rounded-3xl object-center h-full" src="${el.img}" alt="${el.name}">
             </div>
           </div>
         </div>

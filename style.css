@@ -17,7 +17,7 @@ html, body {
 
 @layer components {
   .menu-links-a {
-    @apply font-[Raleway] relative text-6xl sm:text-7xl text-black  sm:leading-[96px] font-semibold capitalize translate-y-[100%] inline-block leading-[72px] tracking-wider border-none;
+    @apply font-[Raleway] relative text-4xl sm:text-7xl text-black  sm:leading-[96px] font-semibold capitalize translate-y-[100%] inline-block leading-[72px] tracking-wider border-none;
   }
 
   .nav-img {
