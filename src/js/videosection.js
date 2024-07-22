@@ -1,8 +1,11 @@
  export function videoSection() {
      
-   let video = document.querySelector("#video")
+   let video = document.querySelectorAll(".video")
    
-   
+   let video1 = video[0];
+   let video2 = video[1];
+   console.log(video1)
+   console.log(video2)
       
      console.log(videoSection.muted)
      
@@ -26,14 +29,17 @@
    
     document.querySelector(".video-section").addEventListener("click",()=> {
         tl.play();
-       video.muted = !video.muted;
+       video1.muted = !video1.muted;
+       video2.muted = !video2.muted;
         
    })
    
    document.querySelector(".video-complete").addEventListener("click",(event)=> {
        tl.reverse(); 
        event.stopPropagation();
-       video.muted = !video.muted;
+       video1.muted = !video1.muted;
+       video2.muted = !video2.muted;
+        
     })
      
      

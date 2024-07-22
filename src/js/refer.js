@@ -1,14 +1,6 @@
 export function referFreind() {
 
-    function mouseFollower(){
-        const crs = document.querySelector(".cursor");
-    
-        document.addEventListener("mousemove", (details) => {
-            crs.style.left = details.x + "px";
-            crs.style.top = details.y + "px";
-        })
-    }
-    // mouseFollower()
+
     
     function circularText() {
         const text = document.querySelector(".refer-text p");
@@ -123,4 +115,54 @@ export function referFreind() {
     
     submitForm();
     
+    function efect() {
+const lerp = (x, y, a) => x * (1 - a) + y * a;
+    let refer_freind = document.querySelector('.refer-friend') 
+    let refer_card = document.querySelector('.refer-card') 
+
+        
+
+        
+   refer_freind.addEventListener("mousemove", function (detls) {
+        const dims = refer_card.getBoundingClientRect();
+        const xstart = dims.x;
+        const ystart = dims.y;
+        
+        const xend = dims.x + dims.width;
+        const yend = dims.y + dims.height;
+        
+        const xmrange = gsap.utils.mapRange(xstart, xend, 0, 1, detls.clientX);
+        const ymrange = gsap.utils.mapRange(ystart, yend, 0, 1, detls.clientY);
+
+
+
+
+
+        gsap.to(refer_card, {
+            x: lerp(-24, 24, xmrange),
+            y: lerp(-24, 24, ymrange),
+            ease: "power4",
+            duration: 1,
+            delay: 0.04
+        });
+    });
+
+   refer_freind.addEventListener("mouseleave", function () {
+        gsap.to(certi_box, {
+            backgroundColor: "transparent",
+            ease: "power4",
+            duration: 0.7,
+        });
+
+        gsap.to(refer_card, {
+            x: 0,
+            y: 0,
+            ease: "power4",
+            duration: 1,
+            delay: 0.04
+        });
+    });
+    }
+    efect();
+
  }

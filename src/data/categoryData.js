@@ -3,7 +3,7 @@
     face: [
         
         {
-            name: "Slip Tint Radiant All-Over Concealer",
+            name: "Slip Tint Radiant ",
             quantity: "12ml/1oz",
             rating: 4.5,
             rate:"",
@@ -11,7 +11,7 @@
 
         },
         {
-            name: "GLOWY SUPER SKIN TINT FOUNDATION",
+            name: "GLOWY SUPER SKIN ",
             quantity: "30 ML / 1.01 OZ",
             rating: 4.8,
             rate:40,
@@ -19,7 +19,7 @@
 
         },
         {
-            name: "SLIP TINT TINTED MOISTURIZER",
+            name: "SLIP  MOISTURIZER",
             quantity: "40 ML / 1.35 OZ",
             rating: 4.3,
             rate: 36,
@@ -62,7 +62,7 @@
 
         },
         {
-            name: "THE LIP STACK",
+            name: " LIP STACK",
             quantity: "12ml/1oz",
             rating: 4.7,
             rate: 42,
@@ -108,7 +108,7 @@
     eyes: [
         
         {
-            name: "SLIP TINT RADIANT ALL-OVER CONCEALER",
+            name: "SLIP TINT RADIANT ",
             quantity: "5 ML / 0.17 FL OZ",
             rating: 4.1,
             rate: 28,
@@ -132,7 +132,7 @@
 
         },
         {
-            name: "MINI MASCARA 101",
+            name: "MINI MASCARA ",
             quantity: "5G",
             rating: 4.9,
             rate: 16,

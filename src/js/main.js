@@ -18,8 +18,6 @@ import { certificateAnim } from './certificate';
 import { referFreind } from './refer.js';
 
 
-
-
 locomotiveJs();
 loderAnim(homeAnim);
 // homeAnim();
