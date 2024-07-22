@@ -60,7 +60,7 @@ function renderdata(index) {
     best_img.src = individualdata.image;
 
     baap.innerHTML = text;
-    console.log(text)
+
 
     gsap.fromTo(best_img, {
         rotate: 90,

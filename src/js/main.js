@@ -39,6 +39,16 @@ certificateAnim();
 
 
 
+function reloadOnResize() {
+  window.addEventListener('resize', function() {
+    location.reload();
+    console.log("shgfkjdshjkfh")
+  });
+}
+
+// Call the function to set up the event listener
+reloadOnResize();
+
 
 
 

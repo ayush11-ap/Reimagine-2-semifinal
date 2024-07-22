@@ -105,8 +105,10 @@ export function loderAnim(homeAnim) {
       scale:0.5 ,
       height : 0 ,
       ease: "power4",
+      
     },
-    "<+=0.4"
+    "<+=0.4",
+
   )
   .to(".left-side , .right-side", {
     height:0 ,

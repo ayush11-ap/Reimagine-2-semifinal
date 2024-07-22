@@ -4,10 +4,8 @@
    
    let video1 = video[0];
    let video2 = video[1];
-   console.log(video1)
-   console.log(video2)
-      
-     console.log(videoSection.muted)
+
+    
      
      let tl = gsap.timeline({
          paused:true
